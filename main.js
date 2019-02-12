@@ -1,11 +1,11 @@
 function callPython() {
     $.ajax({
         type:"GET",
-        url:"http://127.0.0.1:5000/speechToText",
+        url:"http://10.47.105.211:5000/speechToText",
         crossDomain: true,
-        dataType:"json",
+        dataType:"jsonp",
         success: function(o) {
-            alert(o);
+            alert(o.success);
         }, 
         failure: function(o) {
             alert("failed");
