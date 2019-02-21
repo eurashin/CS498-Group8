@@ -1,0 +1,23 @@
+
+
+WEBAPP INTEGRATION
+Priority 2
+As a new  customer, I want it to be accessible to me without downloading the software.
+
+As a new customer, I want to make sure that my accent wouldn't be a problem.
+
+As a new customer, I want to custom make my resume and I want you to ask me what all I want on my resume; not just be done it all for me.
+
+As a new customer, I want to make my resume stand out.
+
+As a new customer, I would like to use your program if it is welcoming and colorful.
+
+As a new customer, I would like to explain my projects and activities so I can explain all that I have done.
+
+As a new customer, I would like to add links to my portfolio website and GitHub.
+
+As an existing customer, I have changed my major and I wish to change the style of my new resume. 
+
+As an existing customer, I wish to edit my resume before it is finalized and changed to pdf; if there are any errors.
+
+As an existing customer, I have issues with the mic and background noise. 
