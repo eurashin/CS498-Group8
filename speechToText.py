@@ -8,12 +8,11 @@ import time
 
 r = sr.Recognizer()
 
-
 def get_name():
     name_in = ''
     with sr.Microphone() as source:
         print('What is your name ?')
-        time.sleep(1)
+#        time.sleep(1)
         audio = r.listen(source)
         print('got it, thanks !')
 
@@ -22,14 +21,13 @@ def get_name():
         # f.write(name_in)
     except:
         pass
-    
+
     return name_in
 
 def get_major():
     major_in = ''
     with sr.Microphone() as source:
         print('What is your major ?')
-        time.sleep(1)
         audio = r.listen(source)
         print('got it, thanks !')
 
@@ -54,47 +52,125 @@ def get_gpa():
         # f.write(gpa_in)
     except:
         pass
-    
+
     return gpa_in
 
 
-def get_hobbies():
-    hobbies = []
-    print("name all the hobbies and say EXIT to quit")
-    while hobby_in is not 'exit':
-        with sr.Microphone() as source:
-            print('listening now')
-            time.sleep(1)
-            audio = r.listen(source)
-            print('got it, thanks !')
-
-        try:
-            hobby_in = r.recognize_google(audio)
-            hobbies.append(hobby_in)
-            # f.write(hobby_in)
-        except:
-            pass
-        
-    return hobbies
+#def get_hobbies():
+#    hobbies = []
+#    num_hobbies = -1
+#    print('how many hobbies do you have ?')
+#    with sr.Microphone() as source:
+#        print('listening now')
+##        time.sleep(1)
+#        audio = r.listen(source)
+#        print('got it, thanks !')
+#
+#        try:
+#            print (num_hobbiess)
+#            num_jobs = r.recognize_google(audio)
+#        # f.write(hobby_in)
+#        except:
+#            print ('didnt get what you said')
+#            get_hobbies()
+#
+#    print ('you will have to give the names of all the hobbies')
+#    for i in range(int(num_hobbiess)):
+#        with sr.Microphone() as source:
+#            print('listening now')
+#            #            time.sleep(1)
+#            audio = r.listen(source)
+#            print('got it, thanks !')
+#
+#        try:
+#            hobby_in = r.recognize_google(audio)
+#            hobbies.append(job_in)
+#        # f.write(hobby_in)
+#        except:
+#            pass
+#
+#    return hobbies
+#
+#def get_jobs():
+#    jobs = []
+#    num_jobs = -1
+#    print('how many jobs have you had ?')
+#    with sr.Microphone() as source:
+#        print('listening now')
+##        time.sleep(1)
+#        audio = r.listen(source)
+#        print('got it, thanks !')
+#
+#        try:
+#            print (num_hobbies)
+#            num_jobs = int(r.recognize_google(audio))
+#        # f.write(hobby_in)
+#        except:
+#            print ('didnt get what you said')
+#            get_jobs()
+#
+#    print ('you will have to give the names of all the companies that you have worked for')
+#
+#    for i in range(int(num_jobs)):
+#        with sr.Microphone() as source:
+#            print('listening now')
+##            time.sleep(1)
+#            audio = r.listen(source)
+#            print('got it, thanks !')
+#
+#        try:
+#            job_in = r.recognize_google(audio)
+#            jobs.append(job_in)
+#            # f.write(hobby_in)
+#        except:
+#            pass
+#
+#    return jobs
 
 def get_jobs():
+    job_in = 'hello'
     jobs = []
-    print("name all the comapnies you have worked for and say EXIT to quit")
-    while hobby_in is not 'exit':
+    print (' name the places you have worked at, say STOP to quit')
+    while job_in !='stop':
+        with sr.Microphone() as source:
+                print('listening now')
+        #        time.sleep(1)
+                audio = r.listen(source)
+                print('got it, thanks !')
+
+                try:
+                    job_in = r.recognize_google(audio)
+                    print(job_in)
+                    jobs.append(job_in)
+#                    print(jobs)
+                # f.write(hobby_in)
+                except:
+                    pass
+
+    return jobs
+
+def get_hobbies():
+    hobby_in = ''
+    hobbies = []
+    print (' name your hobbies, say STOP to quit')
+    while hobby_in !='stop':
         with sr.Microphone() as source:
             print('listening now')
-            time.sleep(1)
+            #        time.sleep(1)
             audio = r.listen(source)
             print('got it, thanks !')
+                
+            try:
+                hobby_in = r.recognize_google(audio)
+                print(hobby_in)
+                hobbies.append(hobby_in)
+                # f.write(hobby_in)
+            except:
+                pass
+#    print(hobbies)
+    return hobbies
 
-        try:
-            hobby_in = r.recognize_google(audio)
-            jobs.append(hobby_in)
-            # f.write(hobby_in)
-        except:
-            pass
-        
-    return jobs
+
 
 def main():
 
@@ -103,31 +179,39 @@ def main():
     print 'Welcome to the resume builder !'
     time.sleep(2)
     print 'You will be asked a bunch of quesitons and your reponses should help us tailor make a resume for you'
-    time.sleep(4)
+    time.sleep(3)
 
+    job = []
+    hobby = []
+    
     name = get_name()
     major = get_major()
     gpa = get_gpa()
     job = get_jobs()
     hobby = get_hobbies()
 
+    job.remove(job[len(job) - 1])
+    hobby.remove(hobby[len(hobby) - 1])
 
 
-    print 'for Name: ', get_name
-    print
-    print 'for Major: ', get_major, '\t\t GPA: ', get_gpa
-    print
-    print 'for Work Experience: ', get_jobs
-    print
-    print 'for Hobbies: ', get_hobbies
 
-    f = open("speechToTextResponses.txt", "w+")
-    f.write(name)
-    f.write(major)
-    f.write(gpa)
-    f.write(job)
-    f.write(hobby)
-    f.close()
+    
+
+    print 'for Name: ', name
+    print
+    print 'for Major: ', major, '\t\t GPA:  ', gpa
+    print
+    print 'for Work Experience: ', job
+    print
+    print 'for Hobbies: ', hobby
+
+#    f = open("speechToTextResponses.txt", "w+")
+#    f.write(name)
+#    f.write(major)
+#    f.write(gpa)
+#    f.write(job)
+#    f.write(hobby)
+#    f.close()
 
 main()
 
