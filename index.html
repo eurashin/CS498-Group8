@@ -1,15 +1,67 @@
+<!--
 
-<!DOCTYPE html5>
-<html>
+Class: CS 498-001
+Project: Speech to Text Resume Builder
+Team Members: Eura Shin, Kyle Sprague, Tej Patel, Evan Yang
+
+Purpose:
+
+References:
+
+https://www.youtube.com/watch?v=Rar2u77i_yg
+
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
 <head>
-    <title>Eura Shin</title>
-    <script src="main.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    
+    <title> Speech to Text Resume Builder </title>
+    <link rel="stylesheet" href="./stylesheet.css">
+
 </head>
+
 <body>
-    <p id="pythonOutput"> </p> 
-    <button type="button" onclick="callPython()">CLICK </button>    
+
+<h1><center> Welcome to our Speech to Text Resume Builder! </center></h1>
+<center><div class="textbox">  Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Proin id elementum turpis, non sagittis eros. Nulla
+    facilisi. Morbi turpis lorem, iaculis in placerat non, tristique ac quam.
+    Quisque quis finibus ex, vel dictum ante. Mauris ut interdum turpis, ac
+    laoreet lacus. Donec dignissim leo vel turpis bibendum pellentesque. Duis
+    eget elementum metus. Fusce fringilla laoreet pulvinar. Pellentesque felis
+    sem, egestas ac neque luctus, elementum placerat libero. Cras ante massa,
+    gravida a magna et, euismod sagittis erat. Nam semper, ex eu porttitor
+    volutpat, neque ligula condimentum urna, ut sodales tellus sem vitae massa.
+</div></center>
+
+<br>
+<center><button id="start" onclick="start()"> Click Here to Start! </button></center>
+
+<script>
+
+function start()
+{
+    document.body.innerHTML = "";
+    document.write("<head><link rel=\"stylesheet\" href=\"./stylesheet.css\"></head>");
+    document.write("<center><h1> Please answer the following questions about yourself: </h1></center><br>");
+    document.write("<div class=\"comments\">");
+    document.write("\t<div class=\"comment bubble\">");
+    document.write("\t\t<p><center><font color=\"white\"> What is your name? </font></center></p>");
+    document.write("</div>");
+    document.write("<div class=\"comments\">");
+    document.write("\t<div class=\"comment bubble\">");
+    document.write("\t\t<p><center><font color=\"white\"> What is your major? </font></center></p>");
+    document.write("</div>");
+    document.write("<div class=\"comments\">");
+    document.write("\t<div class=\"comment bubble\">");
+    document.write("\t\t<p><center><font color=\"white\"> What is your GPA? </font></center></p>");
+    document.write("</div>");
+}
+
+
+</script>
 </body>
 </html>
