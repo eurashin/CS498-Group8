@@ -3,14 +3,10 @@ body
     background:#ffff
 }
 
-.comments
-{
-    width:200px;
-}
 
 .comments .comment
 {
-    width:100%;
+    width:200px;
     margin-bottom:20px;
 }
 
@@ -27,6 +23,8 @@ body
     color:#222;;
     border-radius:3px;
     margin-left:20px;
+    color:white;
+    text-align:center;  
 }
 
 .bubble::after
@@ -49,4 +47,18 @@ body
 {
     width: 600px;
     margin: 0;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

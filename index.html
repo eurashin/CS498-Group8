@@ -20,6 +20,7 @@ https://www.youtube.com/watch?v=Rar2u77i_yg
 
     <title> Speech to Text Resume Builder </title>
     <link rel="stylesheet" href="./stylesheet.css">
+    <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 
@@ -38,28 +39,13 @@ https://www.youtube.com/watch?v=Rar2u77i_yg
 </div></center>
 
 <br>
-<center><button id="start" onclick="start()"> Click Here to Start! </button></center>
+
+<center>
+    <button id="start" onclick="redirect('./pages/interview.php')">Click here to start!</button>
+</center>
 
 <script>
 
-function start()
-{
-    document.body.innerHTML = "";
-    document.write("<head><link rel=\"stylesheet\" href=\"./stylesheet.css\"></head>");
-    document.write("<center><h1> Please answer the following questions about yourself: </h1></center><br>");
-    document.write("<div class=\"comments\">");
-    document.write("\t<div class=\"comment bubble\">");
-    document.write("\t\t<p><center><font color=\"white\"> What is your name? </font></center></p>");
-    document.write("</div>");
-    document.write("<div class=\"comments\">");
-    document.write("\t<div class=\"comment bubble\">");
-    document.write("\t\t<p><center><font color=\"white\"> What is your major? </font></center></p>");
-    document.write("</div>");
-    document.write("<div class=\"comments\">");
-    document.write("\t<div class=\"comment bubble\">");
-    document.write("\t\t<p><center><font color=\"white\"> What is your GPA? </font></center></p>");
-    document.write("</div>");
-}
 
 
 </script>
