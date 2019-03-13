@@ -176,9 +176,9 @@ def main():
 
     
 
-    print 'Welcome to the resume builder !'
+    print('Welcome to the resume builder !')
     time.sleep(2)
-    print 'You will be asked a bunch of quesitons and your reponses should help us tailor make a resume for you'
+    print('You will be asked a bunch of quesitons and your reponses should help us tailor make a resume for you')
     time.sleep(3)
 
     job = []
@@ -197,13 +197,13 @@ def main():
 
     
 
-    print 'for Name: ', name
-    print
-    print 'for Major: ', major, '\t\t GPA:  ', gpa
-    print
-    print 'for Work Experience: ', job
-    print
-    print 'for Hobbies: ', hobby
+    print( 'for Name: ', name)
+    print()
+    print( 'for Major: ', major, '\t\t GPA:  ', gpa)
+    print()
+    print( 'for Work Experience: ', job)
+    print()
+    print( 'for Hobbies: ', hobby)
 
 #    f = open("speechToTextResponses.txt", "w+")
 #    f.write(name)

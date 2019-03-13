@@ -9,12 +9,29 @@ const max_num = 5;
  *  Clear display for next question...
  */
 function conduct_interview() {
-    var question_array=["hi", "hi2", "hi3", "hi4", "hi5", "hi6", "h7"];
+    var question_array=["hi", "hi2", "hi3"];
     var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked 
+    var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
+
     for(var i=0; i<question_array.length; i++) {
         var question = question_array[i];
-        current_question_array = add_question(current_question_array, question, i);
+        current_question_array = add_element(current_question_array, question, i);
         update_bubble_view(current_question_array, i);
+        
+        $.ajax({
+            type:"POST", 
+            url:"/php/speechToText.php", 
+            dataType: "json", 
+            
+            success: function(obj, textstatus) {
+                if( !('error' in obj) ) {
+                    alert(obj.result);
+                }
+                else {
+                    console.log(obj.error);
+                }
+            }
+        });
         alert(current_question_array);
     }
 }
@@ -24,7 +41,7 @@ function conduct_interview() {
  * replaces first, shifts remaining down
  * and shifts remaining down
  */
-function add_question(current_question_array, question, question_index) {
+function add_element(current_question_array, question, question_index) {
     var start_index = 0; 
     if(question_index >= max_num) { //past last element
         start_index = max_num - 1; 
