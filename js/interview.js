@@ -1,5 +1,28 @@
 //globals
 const max_num = 5; 
+var recognition; 
+var id;
+
+function initialize_recognition() {
+    recognition = new webkitSpeechRecognition();
+    recognition.onspeechend = function() {
+        recognition.stop();
+    }
+    recognition.onresult = function(event) {
+        alert("HI");
+        var saidText = "";
+        for (var i = event.resultIndex; i < event.results.length; i++) {
+            if (event.results[i].isFinal) {
+                saidText = event.results[i][0].transcript;
+            } else {
+                saidText += event.results[i][0].transcript;
+            }
+        }
+
+        //update bubble
+        $("#answer_panel").text(saidText);
+    }
+}
 
 /*
  * Take an array of questions, for each question...
@@ -9,7 +32,8 @@ const max_num = 5;
  *  Clear display for next question...
  */
 function conduct_interview() {
-    var question_array=["hi", "hi2", "hi3"];
+    initialize_recognition();
+    var question_array=["What is your name?", "What is your major?", "What is your GPA?"];
     var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked 
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
 
@@ -18,21 +42,19 @@ function conduct_interview() {
         current_question_array = add_element(current_question_array, question, i);
         update_bubble_view(current_question_array, i);
         
+        alert("asking the question....");
+        speech_to_text();
+        /*
         $.ajax({
             type:"POST", 
             url:"/php/speechToText.php", 
             dataType: "json", 
             
             success: function(obj, textstatus) {
-                if( !('error' in obj) ) {
-                    alert(obj.result);
-                }
-                else {
-                    console.log(obj.error);
-                }
+                alert(obj)
             }
         });
-        alert(current_question_array);
+        */
     }
 }
 
@@ -73,4 +95,9 @@ function update_bubble_view(current_question_array, question_index) {
         
         $(element).text(question); //update question
     }
+}
+
+//SPEECH TO TEXT METHOD GOES HERE
+function speech_to_text() {
+    recognition.start();
 }

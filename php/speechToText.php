@@ -1,6 +1,6 @@
 <?php
 
-$command = "python ../speech2text.py";
+$command = "python ../src/python/speech2text.py";
 $string = system($command);
 echo $string;
 
