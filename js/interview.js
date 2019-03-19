@@ -32,7 +32,7 @@ function initialize_recognition() {
 
         //update bubble
         $("#answer_panel").text(answer);
-    
+
     }
 }
 
@@ -124,4 +124,3 @@ function update_bubble_view(current_question_array, question_index) {
         $(element).text(question); //update question
     }
 }
-
