@@ -47,7 +47,6 @@ function conduct_interview() {
         current_question_array = add_element(current_question_array, question, i);
         update_bubble_view(current_question_array, i);
         
-        alert(current_question_array);
 
 
     }
@@ -91,4 +90,3 @@ function update_bubble_view(current_question_array, question_index) {
         $(element).text(question); //update question
     }
 }
-
