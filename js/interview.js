@@ -4,6 +4,14 @@ var recognition;
 var id;
 var answer = "";
 
+
+function startSpeech(){
+    try{ // calling it twice will throw...
+      recognition.start();
+  }
+  catch(e){}
+}
+
 function initialize_recognition() {
     recognition = new webkitSpeechRecognition();
     recognition.onspeechend = function() {
@@ -42,17 +50,42 @@ function conduct_interview() {
     var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
 
-    for(var i=0; i<question_array.length; i++) {
+    /*
+    var i=0; 
+    question_array.forEach(function(question, i) {
+        setTimeout(function() {
+            var question = question_array[i];
+            current_question_array = add_element(current_question_array, question, i);
+            update_bubble_view(current_question_array, i);
+            startSpeech();
+        }, 5000);
+    });
+    */
+    iterator(question_array.length, question_array, current_question_array, current_answer_array, question_array.length);
+    alert("done");
+}
+
+
+var iterator = function(iteration, question_array, current_question_array, current_answer_array, total_length){
+    if(iteration > 0){
+        var i = total_length - iteration;
         var question = question_array[i];
         current_question_array = add_element(current_question_array, question, i);
         update_bubble_view(current_question_array, i);
-        
+        startSpeech();
+        alert(i);
         setTimeout(function() {
-            recognition.start();
-        }, 10000);
-
+            iterator(iteration - 1, question_array, current_question_array, current_answer_array, question_array.length);
+        }, 5000);
     }
 }
+
+
+var demo = function(name, index, onCompleteFunc){
+     /**do staff**/
+     onCompleteFunc();// exec this func when you are done.
+};
+
 
 /* Adds question to the question array.
  * replaces first, shifts remaining down
