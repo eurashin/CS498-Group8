@@ -24,6 +24,11 @@ function initialize_recognition() {
     }
 }
 
+//SPEECH TO TEXT METHOD GOES HERE
+function speech_to_text() {
+    recognition.start();
+}
+
 /*
  * Take an array of questions, for each question...
  *  create a comment bubble
@@ -33,7 +38,7 @@ function initialize_recognition() {
  */
 function conduct_interview() {
     initialize_recognition();
-    var question_array=["What is your name?", "What is your major?", "What is your GPA?"];
+    var question_array=["What is your name?", "What is your major?", "What is your GPA?", "hi1", "hi2", "hi3",  "hi4",  "hi5"];
     var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked 
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
 
@@ -42,8 +47,8 @@ function conduct_interview() {
         current_question_array = add_element(current_question_array, question, i);
         update_bubble_view(current_question_array, i);
         
-        alert("asking the question....");
-        speech_to_text();
+        alert(current_question_array);
+//        speech_to_text();
         /*
         $.ajax({
             type:"POST", 
@@ -97,7 +102,3 @@ function update_bubble_view(current_question_array, question_index) {
     }
 }
 
-//SPEECH TO TEXT METHOD GOES HERE
-function speech_to_text() {
-    recognition.start();
-}
