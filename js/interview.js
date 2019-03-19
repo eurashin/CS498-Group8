@@ -1,7 +1,8 @@
 //globals
-const max_num = 5; 
-var recognition; 
+const max_num = 5;
+var recognition;
 var id;
+var answer = "";
 
 function initialize_recognition() {
     recognition = new webkitSpeechRecognition();
@@ -19,8 +20,11 @@ function initialize_recognition() {
             }
         }
 
+        answer = saidText;
+
         //update bubble
-        $("#answer_panel").text(saidText);
+        $("#answer_panel").text(answer);
+        //recognition.stop();
     }
 }
 
@@ -34,22 +38,26 @@ function initialize_recognition() {
 function conduct_interview() {
     initialize_recognition();
     var question_array=["What is your name?", "What is your major?", "What is your GPA?"];
-    var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked 
+    var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
 
     for(var i=0; i<question_array.length; i++) {
         var question = question_array[i];
         current_question_array = add_element(current_question_array, question, i);
         update_bubble_view(current_question_array, i);
-        
+
         alert("asking the question....");
-        speech_to_text();
+
+        recognition.start();
+        /*current_answer_array[i] = answer;
+        $("#answer_panel").text(answer);*/
+
         /*
         $.ajax({
-            type:"POST", 
-            url:"/php/speechToText.php", 
-            dataType: "json", 
-            
+            type:"POST",
+            url:"/php/speechToText.php",
+            dataType: "json",
+
             success: function(obj, textstatus) {
                 alert(obj)
             }
@@ -64,14 +72,14 @@ function conduct_interview() {
  * and shifts remaining down
  */
 function add_element(current_question_array, question, question_index) {
-    var start_index = 0; 
+    var start_index = 0;
     if(question_index >= max_num) { //past last element
-        start_index = max_num - 1; 
+        start_index = max_num - 1;
     }
     else {
         start_index = question_index;
     }
-    
+
     for(var i=(max_num - 1); i>0; i--) { //shift remaining down
         current_question_array[i] = current_question_array[i - 1];
     }
@@ -92,12 +100,12 @@ function update_bubble_view(current_question_array, question_index) {
         if(i <= question_index) { //question has been asked
             $(element).css('visibility', 'visible'); //make the element visible
         }
-        
+
         $(element).text(question); //update question
     }
 }
 
 //SPEECH TO TEXT METHOD GOES HERE
-function speech_to_text() {
+/*function speech_to_text() {
     recognition.start();
-}
+}*/
