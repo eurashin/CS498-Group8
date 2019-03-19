@@ -10,7 +10,7 @@ function initialize_recognition() {
         recognition.stop();
     }
     recognition.onresult = function(event) {
-        alert("HI");
+        recognition.start();
         var saidText = "";
         for (var i = event.resultIndex; i < event.results.length; i++) {
             if (event.results[i].isFinal) {
@@ -24,6 +24,7 @@ function initialize_recognition() {
 
         //update bubble
         $("#answer_panel").text(answer);
+
     }
 }
 
@@ -37,7 +38,6 @@ function initialize_recognition() {
  */
 function conduct_interview() {
     initialize_recognition();
-    recognition.start();
     var question_array=["What is your name?", "What is your major?", "What is your GPA?"];
     var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
@@ -46,12 +46,13 @@ function conduct_interview() {
         var question = question_array[i];
         current_question_array = add_element(current_question_array, question, i);
         update_bubble_view(current_question_array, i);
-        
 
+        setTimeout(function() {
+            recognition.start();
+        }, 10000);
 
     }
 }
-
 
 /* Adds question to the question array.
  * replaces first, shifts remaining down
