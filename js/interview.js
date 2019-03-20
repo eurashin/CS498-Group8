@@ -31,13 +31,14 @@ function initialize_recognition() {
             }
         }
 
-<<<<<<< HEAD
-=======
-        answer = saidText;
-        alert(saidText);
->>>>>>> 065f8725c8daaef2150bf6605ee97bb31f3cd566
+
+        var node = document.createElement("comment bubbleRight");
+        node.innerHTML = saidText;
+        var aPanel = document.getElementById("answer_panel");
+        aPanel.appendChild(node);
+
         //update bubble
-        $("#answer_panel").text(answer);
+        // $("#answer_panel").text(answer);
         recognition.stop();
         alert("I've stopped listening...");
 
