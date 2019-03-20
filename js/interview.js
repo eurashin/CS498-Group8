@@ -28,8 +28,6 @@ function initialize_recognition() {
             }
         }
 
-        answer = saidText;
-
         //update bubble
         $("#answer_panel").text(answer);
 
@@ -51,7 +49,7 @@ function conduct_interview() {
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
 
     /*
-    var i=0; 
+    var i=0;
     question_array.forEach(function(question, i) {
         setTimeout(function() {
             var question = question_array[i];
