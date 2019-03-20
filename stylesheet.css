@@ -19,6 +19,7 @@ body
 .bubble
 {
     position:relative;
+    width:380px;
     background:#0078fe;
     padding:20px;
     color:#222;;
@@ -51,12 +52,16 @@ body
 {
     position:relative;
 
-    width:20px;
+    width:380px;
     background:#5bc236;
     padding:20px;
     color:#222;;
     border-radius:3px;
-    margin-left:1000px;
+    margin-left:12px;
+    color:white;
+    text-align:center;
+
+    visibility:hidden;
 }
 
 .bubbleRight::After

@@ -5,8 +5,8 @@ var id;
 var answer = "";
 
 
-function startSpeech(){
-    try{ // calling it twice will throw...
+function startSpeech() {
+    try { // calling it twice will throw...
       recognition.start();
       alert("I've started listening...");
   }
@@ -74,8 +74,8 @@ function conduct_interview() {
 }
 
 
-var iterator = function(iteration, question_array, current_question_array, current_answer_array, total_length){
-    if(iteration > 0){
+var iterator = function(iteration, question_array, current_question_array, current_answer_array, total_length) {
+    if(iteration > 0) {
         var i = total_length - iteration;
         var question = question_array[i];
         current_question_array = add_element(current_question_array, question, i);
@@ -88,7 +88,7 @@ var iterator = function(iteration, question_array, current_question_array, curre
 }
 
 
-var demo = function(name, index, onCompleteFunc){
+var demo = function(name, index, onCompleteFunc) {
      /**do staff**/
      onCompleteFunc();// exec this func when you are done.
 };
@@ -122,12 +122,14 @@ function add_element(current_question_array, question, question_index) {
 function update_bubble_view(current_question_array, question_index) {
     for(var i=0; i<max_num; i++) {
         var question = current_question_array[i];
-        var element = "#q".concat(i + 1); //selector for correct question bubble
+        var qElement = "#q".concat(i + 1); //selector for correct question bubble
+        var aElement = "#a".concat(i + 1); //selector for correct answer bubble
 
         if(i <= question_index) { //question has been asked
-            $(element).css('visibility', 'visible'); //make the element visible
+            $(qElement).css('visibility', 'visible'); //make the question element visible
+            $(aElement).css('visibility', 'visible'); //make the answer element visible
         }
 
-        $(element).text(question); //update question
+        $(qElement).text(question); //update question
     }
 }
