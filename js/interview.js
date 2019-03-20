@@ -8,17 +8,20 @@ var answer = "";
 function startSpeech(){
     try{ // calling it twice will throw...
       recognition.start();
+      alert("I've started listening...");
   }
   catch(e){}
 }
 
 function initialize_recognition() {
     recognition = new webkitSpeechRecognition();
+    /*
     recognition.onspeechend = function() {
         recognition.stop();
+        alert("I've stopped listening...");
     }
+    */
     recognition.onresult = function(event) {
-        recognition.start();
         var saidText = "";
         for (var i = event.resultIndex; i < event.results.length; i++) {
             if (event.results[i].isFinal) {
@@ -29,9 +32,11 @@ function initialize_recognition() {
         }
 
         answer = saidText;
-
+        alert(saidText);
         //update bubble
         $("#answer_panel").text(answer);
+        recognition.stop();
+        alert("I've stopped listening...");
 
     }
 }
@@ -62,7 +67,6 @@ function conduct_interview() {
     });
     */
     iterator(question_array.length, question_array, current_question_array, current_answer_array, question_array.length);
-    alert("done");
 }
 
 
@@ -73,10 +77,9 @@ var iterator = function(iteration, question_array, current_question_array, curre
         current_question_array = add_element(current_question_array, question, i);
         update_bubble_view(current_question_array, i);
         startSpeech();
-        alert(i);
         setTimeout(function() {
             iterator(iteration - 1, question_array, current_question_array, current_answer_array, question_array.length);
-        }, 5000);
+        }, 10000);
     }
 }
 
