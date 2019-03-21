@@ -31,11 +31,12 @@ function initialize_recognition() {
             }
         }
 
+        answer = saidText;
 
-        var node = document.createElement("comment bubbleRight");
+        /*var node = document.createElement("comment bubbleRight");
         node.innerHTML = saidText;
         var aPanel = document.getElementById("answer_panel");
-        aPanel.appendChild(node);
+        aPanel.appendChild(node);*/
 
         //update bubble
         // $("#answer_panel").text(answer);
@@ -84,6 +85,12 @@ var iterator = function(iteration, question_array, current_question_array, curre
         setTimeout(function() {
             iterator(iteration - 1, question_array, current_question_array, current_answer_array, question_array.length);
         }, 10000);
+
+
+        setTimeout(function() {
+            current_answer_array = add_answerElement(current_answer_array, answer, i);
+            update_bubble_question(current_answer_array, i);
+        }, 10000);
     }
 }
 
@@ -116,6 +123,25 @@ function add_element(current_question_array, question, question_index) {
     return(current_question_array);
 }
 
+
+function add_answerElement(current_answer_array, answer, answer_index) {
+    var start_index = 0;
+    if(answer_index >= max_num) { //past last element
+        start_index = max_num - 1;
+    }
+    else {
+        start_index = answer_index;
+    }
+
+    for(var i=(max_num - 1); i>0; i--) { //shift remaining down
+        current_answer_array[i] = current_answer_array[i - 1];
+    }
+
+    current_answer_array[0] = answer; //first element is new question
+
+    return(current_answer_array);
+}
+
 /*updates the string and visibility of bubbles
  * based on the current question and answer array
  */
@@ -123,13 +149,24 @@ function update_bubble_view(current_question_array, question_index) {
     for(var i=0; i<max_num; i++) {
         var question = current_question_array[i];
         var qElement = "#q".concat(i + 1); //selector for correct question bubble
-        var aElement = "#a".concat(i + 1); //selector for correct answer bubble
 
         if(i <= question_index) { //question has been asked
             $(qElement).css('visibility', 'visible'); //make the question element visible
-            $(aElement).css('visibility', 'visible'); //make the answer element visible
         }
 
         $(qElement).text(question); //update question
+    }
+}
+
+function update_bubble_question(current_answer_array, answer_index){
+    for(var i=0; i<max_num; i++) {
+        var answer = current_answer_array[i];
+        var aElement = "#a".concat(i + 1); //selector for correct answer bubble
+
+        if(i <= answer_index) {
+            $(aElement).css('visibility', 'visible'); //make the answer element visible
+        }
+
+        $(aElement).text(answer); //update question
     }
 }
