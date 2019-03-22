@@ -90,7 +90,7 @@ var iterator = function(iteration, question_array, current_question_array, curre
         setTimeout(function() {
             current_answer_array = add_answerElement(current_answer_array, answer, i);
             update_bubble_question(current_answer_array, i);
-        }, 10000);
+        }, 6000);
     }
 }
 
