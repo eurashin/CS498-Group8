@@ -3,7 +3,7 @@ const max_num = 5;
 var recognition;
 var id;
 var answer = "";
-var answer_array; 
+var answer_array;
 
 function startSpeech() {
     try { // calling it twice will throw...
@@ -48,7 +48,17 @@ function initialize_recognition() {
  */
 function conduct_interview() {
     initialize_recognition();
-    var question_array=["What is your name?", "What is your major?", "What is your GPA?"];
+    var question_array=["What is your name?", "What is your major?", "What is your GPA?",
+                        "What is your phone number?", "What is your email address?",
+                        "List one job you've had in the past.", "When did you hold this position? (month year - month year)",
+                        "What is the name of the company that you worked for?", "What city is this company located? (City, State Abbrv.)",
+                        "Add a job description.",
+                        "List another job you've had in the past.", "When did you hold this position? (month year - month year)",
+                        "What is the name of the company that you worked for?", "What city is this company located? (City, State Abbrv.)",
+                        "Add a job description.",
+                        "List another job you've had in the past.", "When did you hold this position? (month year - month year)",
+                        "What is the name of the company that you worked for?", "What city is this company located? (City, State Abbrv.)",
+                        "Add a job description."];
     var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
     answer_array = new Array(question_array.length);
@@ -120,7 +130,7 @@ function add_element(current_question_array, question, question_index) {
 
 
 function add_answerElement(current_answer_array, answer, answer_index) {
-    answer_array[answer_index] = answer; 
+    answer_array[answer_index] = answer;
     var start_index = 0;
     if(answer_index >= max_num) { //past last element
         start_index = max_num - 1;
