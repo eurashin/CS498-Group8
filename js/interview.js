@@ -3,24 +3,17 @@ const max_num = 5;
 var recognition;
 var id;
 var answer = "";
-
+var answer_array; 
 
 function startSpeech() {
     try { // calling it twice will throw...
       recognition.start();
-      alert("I've started listening...");
   }
   catch(e){}
 }
 
 function initialize_recognition() {
     recognition = new webkitSpeechRecognition();
-    /*
-    recognition.onspeechend = function() {
-        recognition.stop();
-        alert("I've stopped listening...");
-    }
-    */
     recognition.onresult = function(event) {
         var saidText = "";
         for (var i = event.resultIndex; i < event.results.length; i++) {
@@ -41,7 +34,6 @@ function initialize_recognition() {
         //update bubble
         // $("#answer_panel").text(answer);
         recognition.stop();
-        alert("I've stopped listening...");
 
     }
 }
@@ -59,7 +51,7 @@ function conduct_interview() {
     var question_array=["What is your name?", "What is your major?", "What is your GPA?"];
     var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
-
+    answer_array = new Array(question_array.length);
     /*
     var i=0;
     question_array.forEach(function(question, i) {
@@ -91,6 +83,9 @@ var iterator = function(iteration, question_array, current_question_array, curre
             current_answer_array = add_answerElement(current_answer_array, answer, i);
             update_bubble_question(current_answer_array, i);
         }, 6000);
+    }
+    else {
+        window.localStorage.setItem("answer_array", JSON.stringify(answer_array));
     }
 }
 
@@ -125,6 +120,7 @@ function add_element(current_question_array, question, question_index) {
 
 
 function add_answerElement(current_answer_array, answer, answer_index) {
+    answer_array[answer_index] = answer; 
     var start_index = 0;
     if(answer_index >= max_num) { //past last element
         start_index = max_num - 1;

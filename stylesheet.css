@@ -91,3 +91,23 @@ body
 .center {
   margin: auto;
 }
+
+
+h3 {
+    font-size:30px;
+}
+
+h1 {
+    font-weight:bold; 
+    font-size:70px;
+}
+h2 {
+    font-size:40px;
+}
+
+.form-element {
+    width:100%; 
+    text-align:center; 
+}
+
+
