@@ -6,3 +6,7 @@ body {
 p {
     font-size:14px;
 }
+
+h2 {
+    line-height:5px;
+}
