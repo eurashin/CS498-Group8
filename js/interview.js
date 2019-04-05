@@ -7,6 +7,7 @@ var answer_array;
 
 function startSpeech() {
     try { // calling it twice will throw...
+      answer = "";
       recognition.start();
   }
   catch(e){}
@@ -48,17 +49,7 @@ function initialize_recognition() {
  */
 function conduct_interview() {
     initialize_recognition();
-    var question_array=["What is your name?", "What is your major?", "What is your GPA?",
-                        "What is your phone number?", "What is your email address?",
-                        "List one job you've had in the past.", "When did you hold this position? (month year - month year)",
-                        "What is the name of the company that you worked for?", "What city is this company located? (City, State Abbrv.)",
-                        "Add a job description.",
-                        "List another job you've had in the past.", "When did you hold this position? (month year - month year)",
-                        "What is the name of the company that you worked for?", "What city is this company located? (City, State Abbrv.)",
-                        "Add a job description.",
-                        "List another job you've had in the past.", "When did you hold this position? (month year - month year)",
-                        "What is the name of the company that you worked for?", "What city is this company located? (City, State Abbrv.)",
-                        "Add a job description."];
+    var question_array = resume_1_question_array;
     var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
     answer_array = new Array(question_array.length);
@@ -95,10 +86,18 @@ var iterator = function(iteration, question_array, current_question_array, curre
         }, 6000);
     }
     else {
-        window.localStorage.setItem("answer_array", JSON.stringify(answer_array));
+        set_answers();
     }
 }
 
+var fill_form = function() {
+    set_answers();
+    window.location.href='./form.html';
+}
+
+var set_answers = function() {
+    window.localStorage.setItem("answer_array", JSON.stringify(answer_array));
+}
 
 var demo = function(name, index, onCompleteFunc) {
      /**do staff**/
