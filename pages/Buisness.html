@@ -17,9 +17,8 @@
 
 <body onload="setAnswers()">
     <div id="resume" style="width:8.5in; height:11in; border-style:solid; margin:auto;">
-        <h1 id="0" style="width:100%;" contenteditable='true' align="center">John Doe </h1>
-        <h3 id="1" style="width:100%;" contenteditable='true' align="center">Pre-Med student</h3>
-
+        <h1 id="0" style="width:100%;" contenteditable='true'>John Doe </h1>
+        <h3 id="1" style="width:100%;" contenteditable='true'>Business student</h3>
         <div style="width:60%; margin:auto; height:0.6in;">
             <div style="float:left; width:33%;">
                 <p style="font-weight:bold;">Phone </p>
@@ -27,43 +26,31 @@
             </div>
 
             <div style="float:left; width:33%">
+                <p id="3" contenteditable='true'>john.doe@gmail</p>
+            </div>
+
+            <div style="float:left; width:33%">
                 <p style="font-weight:bold;">Email </p>
                 <p id="4" contenteditable='true'>john.doe@uky.edu</p>
             </div>
 
-            <div style="float:left; width:33%">
-                <p style="font-weight:bold;">Address </p>
-                <p id="Unkown" contenteditable='true'>UK, rose street, Lexington, KY</p>
-            </div>
 
-
-        </div align="center">
-        <br>
-        <br>
-        <br>
-        <p id="3" contenteditable='true' style="height:0.7in; width:90%; " align="center" >-------------------------------------- Statement of Purpose" goes here. ------------------------------------------</p>
-        <duv>
+        </div>
+ <br>
+ 
+        <p id="5" contenteditable='true' style="height:0.7in; width:90%; margin:auto; ">S'tatement of Purpose" goes here.</p>
 
         <h2>Skills</h2>
         <div style="width:90%; display:inline-block; line-height:1; margin:0px;">
-            
-            <!-- <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p style="float:left; margin-left:1em;">Medical office management</p>
-                <p style="margin-left:1em;">Data Entry</p>
-                <p style="float:right; margin-right:1em;">patient vitals</p>
-                <p style="margin-left:1em;">injection administration</p>
-                <p style="float:left; margin-left:1em;">knowledge fo Microsoft Office</p>
-            </div> -->
 
-            <ul>
-                <li>Medical Office Management</li></li>
-                <li>Data Entry</li></li>
-                <li>Patient Vitalst</li></li>
-                <li>Injection Administration</li></li>
-                <li>Microsoft Office</li></li>
-            </ul>
+            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
+                <p style="float:left; margin-right:1em;">Business managment</p>
+                <p style="float:left; margin-right:1em;">Money handling</p>
+                <p style="float:left; margin-right:1em;">Strong economic understanding</p>
+                <p style="float:left; margin-right:1em;">knowledge fo Microsoft Office</p>
+            </div>
 
-            
+
             <!-- <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
                 <p style="float:left; margin-right:1em;">Front-end web development</p>
                 <p style="float:left; margin-right:1em;">Git</p>
@@ -72,18 +59,9 @@
             </div> -->
         </div>
 
-        <h2>Education</h2>
-        <div style="width:90%; display:inline-block; line-height:1; margin:auto;">
-            <p style="font-weight:bold;"> University of Kentucky</p>
-            <p style="font-style:italic; float:left; margin-right:1em; margin-left:17%;"> Bachelor of Science</p>
-            <p style="font-style:italic; float:left; margin-right:1em;"> Biology</p>
-            <p style="font-style:italic; float:left; margin-right:1em;"> December 2019</p>
-            <p style="font-style:italic; float:left; margin-right:1em;"> 3.9/4.0</p>
-        </div>
 
 
-
-        <h2>Work Experience</h2>
+        <h2>Work Experience/internships</h2>
         <div style="width:90%; display:inline-block; line-height:1;">
             <div style="width:30%; float:left; height:100%; margin:0px;">
                 <br>
@@ -96,10 +74,10 @@
 
 
             <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p style='font-weight:bold;'>Medical PRofessional Shadowing</p>
-                <p> Universtiy of Kentucky Health Services</p>
+<p style='font-weight:bold;'>Business Professional Inernship</p>
+                <p> Universtiy of Kentucky School of buisness</p>
                 <hr>
-                <p>I shadowed Dr. Harisson. I took notes about the diagnosis and also helped take the patient vitals.</p>
+                <p>I shadowed Dr. Belfort in business</p>
             </div>
         </div>
 
@@ -120,9 +98,18 @@
             </div>
         </div>
 
-        
 
-    </div>
+
+
+        <h2>Education</h2>
+        <div style="width:90%; display:inline-block; line-height:1; margin:auto;">
+            <p style="font-weight:bold;"> University of Kentucky</p>
+            <p style="font-style:italic; float:left; margin-right:1em; margin-left:17%;"> Bachelor of Science in Business</p>
+            <p style="font-style:italic; float:left; margin-right:1em;"> Business</p>
+            <p style="font-style:italic; float:left; margin-right:1em;"> December 2019</p>
+            <p style="font-style:italic; float:left; margin-right:1em;"> 3.9/4.0</p>
+        </div>
+        </div>
     <button style="margin:auto; width:8.5in; margin-top:20px; margin-bottom:20px;" onclick="exportPDF()">Export Resume</button>
 
 </body>
