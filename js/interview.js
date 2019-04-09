@@ -4,6 +4,14 @@ var recognition;
 var id;
 var answer = "";
 var answer_array;
+var type; 
+
+// loads a new webpage
+// input: the directory of the webpage to be loaded 
+function start_interview(type) {  
+    window.location.href = './pages/interview.html';
+    type = type;
+}
 
 function startSpeech() {
     try { // calling it twice will throw...
@@ -40,6 +48,23 @@ function initialize_recognition() {
 }
 
 
+
+function choose_question_array() {
+    var array = base_question_array;
+
+    if(type == 'cs') {
+        array = array.concat(cs_resume_questions); 
+    }
+    else if(type == 'medical') {
+        array = array.concat(cs_resume_questions); 
+    }
+    else {
+        array = array.concat(cs_resume_questions); 
+    }
+
+    return(array);
+}
+
 /*
  * Take an array of questions, for each question...
  *  create a comment bubble
@@ -47,9 +72,12 @@ function initialize_recognition() {
  *  store answer string
  *  Clear display for next question...
  */
-function conduct_interview() {
+function conduct_interview(interview_type) {
+    /*choose question array based on type*/
+    var question_array = choose_question_array();
+    console.log(question_array);
+
     initialize_recognition();
-    var question_array = resume_1_question_array;
     var current_question_array = ["", "", "", "", ""]; //holds strings of last five questions asked
     var current_answer_array = ["", "", "", "", ""]; //holds strings of last five answers given
     answer_array = new Array(question_array.length);
