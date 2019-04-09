@@ -12,14 +12,14 @@ var base_question_array = [
     "When did you end this position? (month, year)",
     "What is the name of the company that you worked for?", 
     "Where is this company located? (City, State.)",
-    "Describe your responsibilities during this position."
+    "Describe your responsibilities during this position.",
     /*second experience*/
     "List another job you've had in the past.", 
     "When did you begin this position? (month, year)", 
     "When did you end this position? (month, year)",
     "What is the name of the company that you worked for?", 
     "Where is this company located? (City, State.)",
-    "Describe your responsibilities during this position."
+    "Describe your responsibilities during this position.",
     /*education*/ 
     "What is the last university you've attended?",
     "What is the degree you obtained at this university?", 
