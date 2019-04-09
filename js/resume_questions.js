@@ -3,9 +3,7 @@ var base_question_array = [
     "What is your name?", 
     "What is your job title?", 
     "What is your phone number?", 
-    "What is your LinkedIn",
     "What is your email?", 
-    "What is your summarized career objective?", 
     /*first experience*/
     "List one job you've had in the past.", 
     "When did you begin this position? (month, year)", 
@@ -30,6 +28,8 @@ var base_question_array = [
 
 var cs_resume_questions = [
     /*skills*/
+    "What is your summarized career objective?", 
+    "What is your LinkedIn",
     "What is the programming language you are most familiar with?", 
     "What is the next programming language you are familiar with?",
     "What is the next programming language you are familiar with?",
@@ -44,4 +44,14 @@ var cs_resume_questions = [
     "Describe this project.",
     "Name another project you have worked on.",
     "Describe this project."
+]
+
+var med_resume_questions = [
+    /*skills*/
+    "What is your summarized career objective?", 
+    "what is your address ?",
+    "What are your skills that you would like to add?",
+    "What is the next skill ?",
+    "what is the next skill ?",
+    "what is the next skill ?"    
 ]
