@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="../resume.css">
+    <link rel="stylesheet" href="../med_resume.css">
 
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,111 +17,120 @@
 
 <body onload="setAnswers()">
     <div id="resume" style="width:8.5in; height:11in; border-style:solid; margin:auto;">
-        <h1 id="0" style="width:100%;" contenteditable='true' align="center">John Doe </h1>
-        <h3 id="1" style="width:100%;" contenteditable='true' align="center">Pre-Med student</h3>
-
+        <!-- header-->
+        <h1 id="0" style="width:100%;" contenteditable='true' class='form-element'> Name </h1>
+        <h3 id="1" style="width:100%;" contenteditable='true' class='form-element'>Occupation/Title</h3>
         <div style="width:60%; margin:auto; height:0.6in;">
-            <div style="float:left; width:33%;">
+            <div style="float:left; width:49%;">
                 <p style="font-weight:bold;">Phone </p>
-                <p id="2" contenteditable='true'>588-888-8888</p>
+                <p id="2" contenteditable='true' class='form-element'>Phone Number</p>
             </div>
 
-            <div style="float:left; width:33%">
+            <div style="float:left; width:49%">
                 <p style="font-weight:bold;">Email </p>
-                <p id="3" contenteditable='true'>john.doe@uky.edu</p>
+                <p id="3" contenteditable='true' class='form-element'>email</p>
             </div>
-
-            <div style="float:left; width:33%">
-                <p style="font-weight:bold;">Address </p>
-                <p id="37" contenteditable='true'>UK, rose street, Lexington, KY</p>
-            </div>
-
-
-        </div align="center">
+        </div>
         <br>
-        <p id="36" contenteditable='true' style="height:0.7in; width:90%; " align="center" >-------------------------------------- Statement of Purpose" goes here. ------------------------------------------</p>
-        <duv>
+        <h3 id="1" style="width:100%;" contenteditable='true' class='form-element'>Professional Summary</h3>
+        <p id="21" contenteditable='true' style="height:0.7in; width:90%; margin:auto; " class='form-element'>Summary of your career objectives</p>
 
-        <h2 align="left">Skills</h2>
+        <br>
+        <hr>
+        <h2>Work Experience</h2>
+        <div style="width:90%; display:inline-block; line-height:1;">
+            <div style="width:30%; float:left; height:100%; margin:0px;">
+                <br>
+                <p style="float:left;" id='5' contenteditable='true' class='form-element'> Start date </p>
+                <p style="float:left; margin-right:1em; margin-left:1em;"> - </p>
+                <p style="float:left;" id='6' contenteditable='true' class='form-element'> End date </p>
+                <br>
+                <p style="float:left" id='8' contenteditable='true' class='form-element'> Company Location </p>
+            </div>
+            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
+                <p style='font-weight:bold;' id='4' contenteditable='true' class='form-element'>Job Title</p>
+                <p id='7' contenteditable='true' class='form-element'> Company </p>
+                <hr>
+                <p id='9' contenteditable='true' class='form-element'>Job responsibilities/description</p>
+            </div>
+        </div>
+
+        <div style="width:90%; display:inline-block; line-height:1;">
+            <div style="width:30%; float:left; height:100%; margin:0px;">
+                <br>
+                <p style="float:left;" id='11' contenteditable='true' class='form-element'> Start date </p>
+                <p style="float:left; margin-right:1em; margin-left:1em;"> - </p>
+                <p style="float:left;" id='12' contenteditable='true' class='form-element'> End date </p>
+                <br>
+                <p style="float:left;" id='14' contenteditable='true' class='form-element'> Company Location </p>
+            </div>
+            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
+                <p style='font-weight:bold;' id='10' contenteditable='true' class='form-element'> Job Title </p>
+                <p id='13' contenteditable='true' class='form-element'> Company</p>
+                <hr>
+                <p id='15' contenteditable='true' class='form-element'>Job responsibilities/description</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Skills</h2>
         <div style="width:90%; display:inline-block; line-height:1; margin:0px;">
-            
-            <!-- <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p style="float:left; margin-left:1em;">Medical office management</p>
-                <p style="margin-left:1em;">Data Entry</p>
-                <p style="float:right; margin-right:1em;">patient vitals</p>
-                <p style="margin-left:1em;">injection administration</p>
-                <p style="float:left; margin-left:1em;">knowledge fo Microsoft Office</p>
-            </div> -->
-
-            <ul>
-                <li id="39" contenteditable='true' align="left">Medical Office Management</li></li>
-                <li id="40" contenteditable='true' align="left">Data Entry</li></li>
-                <li id="41" contenteditable='true' align="left">Patient Vitalst</li></li>
-                <li id="42" contenteditable='true' align="left">Injection Administration</li></li>
-                <li id="43" contenteditable='true' align="left">Microsoft Office</li></li>
-            </ul>
-
-            
-            <!-- <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p style="float:left; margin-right:1em;">Front-end web development</p>
-                <p style="float:left; margin-right:1em;">Git</p>
-                <p style="float:left; margin-right:1em;">Jenkins</p>
-                <p style="float:left; margin-right:1em;">Command line</p>
-            </div> -->
-        </div>
-
-        <h2 align="left">Education</h2>
-        <div align="left" style="width:90%; display:inline-block; line-height:1; margin:auto;">
-            <p id="16" contenteditable='true' style="font-weight:bold;"> University of Kentucky </p>
-            <p id="17" contenteditable='true' style="font-style:italic; float:left; margin-left:1em; "> Bachelor of Science </p>
-            <p id="18" contenteditable='true' style="font-style:italic; float:left; margin-left:1em;"> Biology</p>
-            <p id="19" contenteditable='true' style="font-style:italic; float:middle; margin-right:1em;"> (3.9/4.0) </p>
-        </div>
-
-
-
-        <h2 align="left"> Work Experience</h2>
-        <div style="width:90%; display:inline-block; line-height:1;">
             <div style="width:30%; float:left; height:100%; margin:0px;">
-                <br>
-                <p style="float:left;"> April 2016 </p>
-                <p style="float:left; margin-right:1em; margin-left:1em;"> - </p>
-                <p style="float:left;"> Present </p>
-                <br>
-                <p style="float:left"> Lexington Kentucky </p>
-            </div>
-
-
-            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p style='font-weight:bold;'>Medical PRofessional Shadowing</p>
-                <p> Universtiy of Kentucky Health Services</p>
-                <hr>
-                <p>I shadowed Dr. Harisson. I took notes about the diagnosis and also helped take the patient vitals.</p>
-            </div>
-        </div>
-
-        <div style="width:90%; display:inline-block; line-height:1;">
-            <div style="width:30%; float:left; height:100%; margin:0px;">
-                <br>
-                <p style="float:left;"> April 2016 </p>
-                <p style="float:left; margin-right:1em; margin-left:1em;"> - </p>
-                <p style="float:left;"> Present </p>
-                <br>
-                <p style="float:left;"> Lexington Kentucky </p>
+                <p style="font-weight:bold;"> Programming Languages </p>
             </div>
             <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p style='font-weight:bold;'>Professional babysitter</p>
-                <p> Babysitting Inc.</p>
-                <hr>
-                <p>I cared for the world's next generation of leaders through gentle encouragement and a watchful eye.</p>
+                <p style="float:left; margin-right:1em;" id='23' contenteditable='true' class='form-element'>Language</p>
+                <p style="float:left; margin-right:1em;" id='24' contenteditable='true' class='form-element'>Language</p>
+                <p style="float:left; margin-right:1em;" id='25' contenteditable='true' class='form-element'>Language</p>
+                <p style="float:left; margin-right:1em;" id='26' contenteditable='true' class='form-element'>Language</p>
+                <p style="float:left; margin-right:1em;" id='27' contenteditable='true' class='form-element'>Language</p>
+                <p style="float:left; margin-right:1em;" id='28' contenteditable='true' class='form-element'>Language</p>
+            </div>
+
+            <div style="width:30%; float:left; height:100%; margin:0px;">
+                <p style="font-weight:bold;"> Tools/Framework</p>
+            </div>
+            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
+                <p style="float:left; margin-right:1em;" id='29' contenteditable='true' class='form-element'>Tool</p>
+                <p style="float:left; margin-right:1em;" id='30' contenteditable='true' class='form-element'>Tool</p>
+                <p style="float:left; margin-right:1em;" id='31' contenteditable='true' class='form-element'>Tool</p>
+                <p style="float:left; margin-right:1em;" id='32' contenteditable='true' class='form-element'>Tool</p>
             </div>
         </div>
 
+        <hr>
+
+        <h2>Projects</h2>
+        <div style="width:90%; display:inline-block; line-height:1; margin:0px;">
+            <div style="width:30%; float:left; height:100%; margin:0px;">
+                <p style="font-weight:bold;" id='33' contenteditable='true' class='form-element'> Project Name</p>
+            </div>
+            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
+                <p id='34' contenteditable='true' class='form-element'>Project Description</p>
+            </div>
+        </div>
+        <div style="width:90%; display:inline-block; line-height:1;">
+            <div style="width:30%; float:left; height:100%; margin:0px;">
+                <p style="font-weight:bold;" id='35' contenteditable='true' class='form-element'> Project Name </p>
+            </div>
+            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
+                <p id='36' contenteditable='true' class='form-element'>Project Description</p>
+            </div>
+        </div>
         
+        <hr>
+
+        <h2>Education</h2>
+        <div style="width:90%; display:inline-block; line-height:1; margin:auto;">
+            <p style="font-weight:bold;" id='16' contenteditable='true' class='form-element'> University Name</p>
+            <p style="font-style:italic; float:left; margin-right:1em; margin-left:17%;" id='17' contenteditable='true' class='form-element'> Degree Achieved</p>
+            <p style="font-style:italic; float:left; margin-right:1em;" id='18' contenteditable='true' class='form-element'> Major</p>
+            <p style="font-style:italic; float:left; margin-right:1em;" id='19' contenteditable='true' class='form-element'> Date of graduation</p>
+            <p style="font-style:italic; float:left; margin-right:1em;" id='20' contenteditable='true' class='form-element'> GPA</p>
+        </div>
 
     </div>
     <button style="margin:auto; width:8.5in; margin-top:20px; margin-bottom:20px;" onclick="exportPDF()">Export Resume</button>
 
 </body>
-
-</html>

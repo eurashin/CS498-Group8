@@ -48,7 +48,6 @@ function initialize_recognition() {
 }
 
 
-
 function choose_question_array() {
     var array = base_question_array;
 
@@ -56,10 +55,10 @@ function choose_question_array() {
         array = array.concat(cs_resume_questions); 
     }
     else if(type == 'medical') {
-        array = array.concat(cs_resume_questions); 
+        array = array.concat(med_resume_questions); 
     }
     else {
-        array = array.concat(cs_resume_questions); 
+        array = array.concat(business_resume_questions); 
     }
 
     return(array);

@@ -106,10 +106,12 @@ h2 {
 }
 
 .form-element {
-    width:100%; 
-    text-align:center; 
+    border-style:solid;
 }
 
 .class {
     margin:auto;
 }
+
+
+
