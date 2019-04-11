@@ -16,28 +16,56 @@
 
 
 <body onload="setAnswers()">
-    <div id="resume" style="width:8.5in; height:11in; border-style:solid; margin:auto;">
+    <div id="resume" style="width:8.5in; height:11in; border-style:solid; margin:auto; padding-left:10px; padding-right:10px;">
         <!-- header-->
-        <h1 id="0" style="width:100%;" contenteditable='true' class='form-element'> Name </h1>
-        <h3 id="1" style="width:100%;" contenteditable='true' class='form-element'>Occupation/Title</h3>
-        <div style="width:60%; margin:auto; height:0.6in;">
-            <div style="float:left; width:49%;">
+        <img src='../images/med_symbol.png' style='width:1.5in; margin-left:3.5in;'/>
+        <h1 id="0" style="width:100%; text-align:center;" contenteditable='true' class='form-element'> Name </h1>
+        <h3 id="1" style="width:100%; text-align:center;" contenteditable='true' class='form-element'>Occupation/Title</h3>
+        <h3 id="1" style="width:100%; text-align:center;" contenteditable='true' class='form-element'>Years of Experience</h3>
+        <div style="width:60%; margin:auto; height:0.5in;">
+            <div style="float:left; width:49%; text-align:center;">
                 <p style="font-weight:bold;">Phone </p>
                 <p id="2" contenteditable='true' class='form-element'>Phone Number</p>
             </div>
 
-            <div style="float:left; width:49%">
+            <div style="float:left; width:49%; text-align:center;">
                 <p style="font-weight:bold;">Email </p>
                 <p id="3" contenteditable='true' class='form-element'>email</p>
             </div>
         </div>
         <br>
         <h3 id="1" style="width:100%;" contenteditable='true' class='form-element'>Professional Summary</h3>
-        <p id="21" contenteditable='true' style="height:0.7in; width:90%; margin:auto; " class='form-element'>Summary of your career objectives</p>
+        <p id="21" contenteditable='true' style="height:0.5in; width:90%; margin:auto; " class='form-element'>Summary of your career objectives</p>
 
         <br>
+
+        <h2>Skills</h2>
         <hr>
+        <div style="width:90%; display:inline-block; line-height:1; margin:0px;">
+            <div style="width:30%; float:left; height:100%; margin:0px;">
+                <p style="font-weight:bold;"> Medical/Laboratory</p>
+            </div>
+            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
+                <p style="float:left; margin-right:1em;" id='23' contenteditable='true' class='form-element'>Skill</p>
+                <p style="float:left; margin-right:1em;" id='24' contenteditable='true' class='form-element'>Skill</p>
+                <p style="float:left; margin-right:1em;" id='25' contenteditable='true' class='form-element'>Skill</p>
+                <p style="float:left; margin-right:1em;" id='26' contenteditable='true' class='form-element'>Skill</p>
+                <p style="float:left; margin-right:1em;" id='27' contenteditable='true' class='form-element'>Skill</p>
+                <p style="float:left; margin-right:1em;" id='28' contenteditable='true' class='form-element'>Skill</p>
+            </div>
+            <div style="width:30%; float:left; height:100%; margin:0px;">
+                <p style="font-weight:bold;"> Leadership</p>
+            </div>
+            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
+                <p style="float:left; margin-right:1em;" id='29' contenteditable='true' class='form-element'>Skill</p>
+                <p style="float:left; margin-right:1em;" id='30' contenteditable='true' class='form-element'>Skill</p>
+                <p style="float:left; margin-right:1em;" id='31' contenteditable='true' class='form-element'>Skill</p>
+                <p style="float:left; margin-right:1em;" id='32' contenteditable='true' class='form-element'>Skill</p>
+            </div>
+        </div>
+
         <h2>Work Experience</h2>
+        <hr>
         <div style="width:90%; display:inline-block; line-height:1;">
             <div style="width:30%; float:left; height:100%; margin:0px;">
                 <br>
@@ -72,56 +100,8 @@
             </div>
         </div>
 
-        <hr>
-
-        <h2>Skills</h2>
-        <div style="width:90%; display:inline-block; line-height:1; margin:0px;">
-            <div style="width:30%; float:left; height:100%; margin:0px;">
-                <p style="font-weight:bold;"> Programming Languages </p>
-            </div>
-            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p style="float:left; margin-right:1em;" id='23' contenteditable='true' class='form-element'>Language</p>
-                <p style="float:left; margin-right:1em;" id='24' contenteditable='true' class='form-element'>Language</p>
-                <p style="float:left; margin-right:1em;" id='25' contenteditable='true' class='form-element'>Language</p>
-                <p style="float:left; margin-right:1em;" id='26' contenteditable='true' class='form-element'>Language</p>
-                <p style="float:left; margin-right:1em;" id='27' contenteditable='true' class='form-element'>Language</p>
-                <p style="float:left; margin-right:1em;" id='28' contenteditable='true' class='form-element'>Language</p>
-            </div>
-
-            <div style="width:30%; float:left; height:100%; margin:0px;">
-                <p style="font-weight:bold;"> Tools/Framework</p>
-            </div>
-            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p style="float:left; margin-right:1em;" id='29' contenteditable='true' class='form-element'>Tool</p>
-                <p style="float:left; margin-right:1em;" id='30' contenteditable='true' class='form-element'>Tool</p>
-                <p style="float:left; margin-right:1em;" id='31' contenteditable='true' class='form-element'>Tool</p>
-                <p style="float:left; margin-right:1em;" id='32' contenteditable='true' class='form-element'>Tool</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <h2>Projects</h2>
-        <div style="width:90%; display:inline-block; line-height:1; margin:0px;">
-            <div style="width:30%; float:left; height:100%; margin:0px;">
-                <p style="font-weight:bold;" id='33' contenteditable='true' class='form-element'> Project Name</p>
-            </div>
-            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p id='34' contenteditable='true' class='form-element'>Project Description</p>
-            </div>
-        </div>
-        <div style="width:90%; display:inline-block; line-height:1;">
-            <div style="width:30%; float:left; height:100%; margin:0px;">
-                <p style="font-weight:bold;" id='35' contenteditable='true' class='form-element'> Project Name </p>
-            </div>
-            <div style="width:67%; float:right; height:100%; margin:0px; text-align:left;">
-                <p id='36' contenteditable='true' class='form-element'>Project Description</p>
-            </div>
-        </div>
-        
-        <hr>
-
         <h2>Education</h2>
+        <hr>
         <div style="width:90%; display:inline-block; line-height:1; margin:auto;">
             <p style="font-weight:bold;" id='16' contenteditable='true' class='form-element'> University Name</p>
             <p style="font-style:italic; float:left; margin-right:1em; margin-left:17%;" id='17' contenteditable='true' class='form-element'> Degree Achieved</p>
@@ -131,6 +111,8 @@
         </div>
 
     </div>
+    <center>
     <button style="margin:auto; width:8.5in; margin-top:20px; margin-bottom:20px;" onclick="exportPDF()">Export Resume</button>
+    </center>
 
 </body>
