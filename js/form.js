@@ -1,5 +1,7 @@
+var answer_array; 
+
 function setAnswers() {
-    var answer_array =  JSON.parse(window.localStorage.getItem("answer_array"));
+    answer_array =  JSON.parse(window.localStorage.getItem("answer_array"));
     console.log(answer_array);
     for(var i=0; i<answer_array.length; i++) {
         if(!answer_array[i]) { //is empty
@@ -18,14 +20,11 @@ function setAnswers() {
         $(this).css('color', 'black');
         $(this).css('font-style', 'normal');
         $(this).text('');
+        answer_array[this.id] = 'filled';
     }) 
             
 }
 
-
-function addHeader() {
-
-}
 
 // References:
 // https://www.youtube.com/watch?v=WJOfCnoqShw
@@ -34,7 +33,13 @@ function addHeader() {
 function exportPDF()
 {
     $('.form-element').css('border-style', 'none');
-    $('.form-element').text('');
+    
+    for(var i=0; i<answer_array.length; i++) {
+        if(!answer_array[i]) { //is empty
+            $('#' + String(i)).text(''); 
+        }
+    }
+
 
     html2canvas(document.querySelector("#resume")).then(canvas => {
         doc = new jsPDF('p', 'px', [1593, 1233]);
