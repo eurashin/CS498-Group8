@@ -9,7 +9,6 @@ function setAnswers() {
             $('#' + String(i)).css('color', 'grey'); //should have prompt
             $('#' + String(i)).css('border', '1px solid black'); //should have border
             $('#' + String(i)).css('min-width', '20px');
-           
         }
         else {
             $("#" + String(i)).text(answer_array[i]); //grab the element

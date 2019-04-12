@@ -119,7 +119,15 @@ var iterator = function(iteration, question_array, current_question_array, curre
 
 var fill_form = function() {
     set_answers();
-    window.location.href='./form.html';
+    if(type == 'cs') {
+        window.location.href='./form.html';
+    }
+    else if(type == 'medical') {
+        window.location.href='./med.html';
+    }
+    else {
+        window.location.href='./Business.html';
+    }
 }
 
 var set_answers = function() {
