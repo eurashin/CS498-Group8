@@ -31,13 +31,13 @@ function setAnswers() {
 // https://github.com/MrRio/jsPDF/issues/476
 function exportPDF()
 {
-    /*$('.form-element').css('border-style', 'none');
+    $('.form-element').css('border-style', 'none');
 
     for(var i=0; i<answer_array.length; i++) {
         if(!answer_array[i]) { //is empty
             $('#' + String(i)).text('');
         }
-    }*/
+    }
 
 
     html2canvas(document.querySelector("#resume")).then(canvas => {

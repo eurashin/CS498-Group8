@@ -55,3 +55,13 @@ var med_resume_questions = [
     "what is the next skill ?",
     "what is the next skill ?"    
 ]
+
+var business_resume_questions = [
+    /*skills*/
+    "What is your summarized career objective?", 
+    "what is your address ?",
+    "What are your skills that you would like to add?",
+    "What is the next skill ?",
+    "what is the next skill ?",
+    "what is the next skill ?"    
+]

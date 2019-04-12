@@ -10,7 +10,7 @@ var type;
 // input: the directory of the webpage to be loaded 
 function start_interview(type) {  
     window.location.href = './pages/interview.html';
-    type = type;
+    window.localStorage.setItem("type", JSON.stringify(type));
 }
 
 function startSpeech() {
@@ -48,9 +48,9 @@ function initialize_recognition() {
 }
 
 
-function choose_question_array() {
+function choose_question_array(type) {
     var array = base_question_array;
-
+    alert(type);
     if(type == 'cs') {
         array = array.concat(cs_resume_questions); 
     }
@@ -73,7 +73,8 @@ function choose_question_array() {
  */
 function conduct_interview(interview_type) {
     /*choose question array based on type*/
-    var question_array = choose_question_array();
+    type = JSON.parse(window.localStorage.getItem("type"));
+    var question_array = choose_question_array(type);
     console.log(question_array);
 
     initialize_recognition();
