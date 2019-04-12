@@ -1,0 +1,10 @@
+body
+{
+    font-family: Helvetica, black, sans-serif;
+    text-align:center;
+}
+
+p
+{
+    display: inline-block;
+}
