@@ -1,0 +1,240 @@
+
+Test Case 1  		(Key = 1.2.1.1.0.)
+   Type            :  computer science
+   Header          :  applicant
+   Info            :  statement of purpose
+   Projects        :  number of projects
+   Extracurricular :  <n/a>
+
+
+Test Case 2  		(Key = 1.2.1.2.0.)
+   Type            :  computer science
+   Header          :  applicant
+   Info            :  statement of purpose
+   Projects        :  project info
+   Extracurricular :  <n/a>
+
+
+Test Case 3  		(Key = 1.2.2.1.0.)
+   Type            :  computer science
+   Header          :  applicant
+   Info            :  summary of experience
+   Projects        :  number of projects
+   Extracurricular :  <n/a>
+
+
+Test Case 4  		(Key = 1.2.2.2.0.)
+   Type            :  computer science
+   Header          :  applicant
+   Info            :  summary of experience
+   Projects        :  project info
+   Extracurricular :  <n/a>
+
+
+Test Case 5  		(Key = 1.3.1.1.0.)
+   Type            :  computer science
+   Header          :  email
+   Info            :  statement of purpose
+   Projects        :  number of projects
+   Extracurricular :  <n/a>
+
+
+Test Case 6  		(Key = 1.3.1.2.0.)
+   Type            :  computer science
+   Header          :  email
+   Info            :  statement of purpose
+   Projects        :  project info
+   Extracurricular :  <n/a>
+
+
+Test Case 7  		(Key = 1.3.2.1.0.)
+   Type            :  computer science
+   Header          :  email
+   Info            :  summary of experience
+   Projects        :  number of projects
+   Extracurricular :  <n/a>
+
+
+Test Case 8  		(Key = 1.3.2.2.0.)
+   Type            :  computer science
+   Header          :  email
+   Info            :  summary of experience
+   Projects        :  project info
+   Extracurricular :  <n/a>
+
+
+Test Case 9  		(Key = 1.4.1.1.0.)
+   Type            :  computer science
+   Header          :  phone
+   Info            :  statement of purpose
+   Projects        :  number of projects
+   Extracurricular :  <n/a>
+
+
+Test Case 10 		(Key = 1.4.1.2.0.)
+   Type            :  computer science
+   Header          :  phone
+   Info            :  statement of purpose
+   Projects        :  project info
+   Extracurricular :  <n/a>
+
+
+Test Case 11 		(Key = 1.4.2.1.0.)
+   Type            :  computer science
+   Header          :  phone
+   Info            :  summary of experience
+   Projects        :  number of projects
+   Extracurricular :  <n/a>
+
+
+Test Case 12 		(Key = 1.4.2.2.0.)
+   Type            :  computer science
+   Header          :  phone
+   Info            :  summary of experience
+   Projects        :  project info
+   Extracurricular :  <n/a>
+
+
+Test Case 13 		(Key = 1.5.1.1.0.)
+   Type            :  computer science
+   Header          :  linkedin
+   Info            :  statement of purpose
+   Projects        :  number of projects
+   Extracurricular :  <n/a>
+
+
+Test Case 14 		(Key = 1.5.1.2.0.)
+   Type            :  computer science
+   Header          :  linkedin
+   Info            :  statement of purpose
+   Projects        :  project info
+   Extracurricular :  <n/a>
+
+
+Test Case 15 		(Key = 1.5.2.1.0.)
+   Type            :  computer science
+   Header          :  linkedin
+   Info            :  summary of experience
+   Projects        :  number of projects
+   Extracurricular :  <n/a>
+
+
+Test Case 16 		(Key = 1.5.2.2.0.)
+   Type            :  computer science
+   Header          :  linkedin
+   Info            :  summary of experience
+   Projects        :  project info
+   Extracurricular :  <n/a>
+
+
+Test Case 17 		(Key = 2.2.2.0.1.)
+   Type            :  business
+   Header          :  applicant
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  number of activities
+
+
+Test Case 18 		(Key = 2.2.2.0.2.)
+   Type            :  business
+   Header          :  applicant
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  activity info
+
+
+Test Case 19 		(Key = 2.3.2.0.1.)
+   Type            :  business
+   Header          :  email
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  number of activities
+
+
+Test Case 20 		(Key = 2.3.2.0.2.)
+   Type            :  business
+   Header          :  email
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  activity info
+
+
+Test Case 21 		(Key = 2.4.2.0.1.)
+   Type            :  business
+   Header          :  phone
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  number of activities
+
+
+Test Case 22 		(Key = 2.4.2.0.2.)
+   Type            :  business
+   Header          :  phone
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  activity info
+
+
+Test Case 23 		(Key = 2.5.2.0.1.)
+   Type            :  business
+   Header          :  linkedin
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  number of activities
+
+
+Test Case 24 		(Key = 2.5.2.0.2.)
+   Type            :  business
+   Header          :  linkedin
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  activity info
+
+
+Test Case 25 		(Key = 2.6.2.0.1.)
+   Type            :  business
+   Header          :  years_of_exp
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  number of activities
+
+
+Test Case 26 		(Key = 2.6.2.0.2.)
+   Type            :  business
+   Header          :  years_of_exp
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  activity info
+
+
+Test Case 27 		(Key = 3.1.2.0.0.)
+   Type            :  medical
+   Header          :  logo
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  <n/a>
+
+
+Test Case 28 		(Key = 3.2.2.0.0.)
+   Type            :  medical
+   Header          :  applicant
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  <n/a>
+
+
+Test Case 29 		(Key = 3.3.2.0.0.)
+   Type            :  medical
+   Header          :  email
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  <n/a>
+
+
+Test Case 30 		(Key = 3.4.2.0.0.)
+   Type            :  medical
+   Header          :  phone
+   Info            :  summary of experience
+   Projects        :  <n/a>
+   Extracurricular :  <n/a>
+
