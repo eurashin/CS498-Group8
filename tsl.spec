@@ -1,25 +1,24 @@
-parameters:
-	Type:
-		Computer Science	[property cs]
-		business	[property business]
-		medical	[property medical]
+Type:
+	computer science.	[property cs]
+	business.	[property business]
+	medical.	[property medical]
 
-	Header:
-		logo	[if medical]
-		name
-		email
-		phone
-		linkedin	[if cs || business]
-		years_of_exp	[if business]
+Header:
+	logo.	[if medical]
+	applicant.
+	email.
+	phone.
+	linkedin.	[if cs || business]
+	years_of_exp.	[if business]
 
-	Info:
-		Statement of Purpose	[if cs]
-		Summary of Experience	[is business || medical]
+Info:
+	statement of purpose.	[if cs]
+	summary of experience.	[is business || medical]
 
-	Projects:					
-		number_of_projects	[if cs]
-		project_info	[if cs]
+Projects:					
+	number of projects.	[if cs]
+	project info.	[if cs]
 
-	Extracurricular:
-		number_of_activities	[if business]
-		activity_info	[if business]
+Extracurricular:
+	number of activities.	[if business]
+	activity info.	[if business]
