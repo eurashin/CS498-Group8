@@ -50,7 +50,7 @@ function initialize_recognition() {
 
 function choose_question_array(type) {
     var array = base_question_array;
-    alert(type);
+   
     if(type == 'cs') {
         array = array.concat(cs_resume_questions); 
     }

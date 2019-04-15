@@ -66,10 +66,29 @@ var med_resume_questions = [
 
 var business_resume_questions = [
     /*skills*/
+    "What is your linkedin link?",
     "What is your summarized career objective?", 
-    "what is your address ?",
-    "What are your skills that you would like to add?",
-    "What is the next skill ?",
-    "what is the next skill ?",
-    "what is the next skill ?"    
+    "Name a skill",
+    "Name another skill",
+    "Name another skill",
+    "Name another skill",
+    "Name another skill",
+    "Name another skill",
+    "Name another skill",
+    "Name another skill",
+    "Name another skill",
+    "Name another skill",
+    "Name an extracurricular you are involved in",
+    "When did you start your involvement (month, year)?",
+    "When did you end your involvement (month, year)?",
+    "Add a description bullet point for this extracurricular (1/3)",
+    "Add another description bullet point for this extracurricular (2/3)",
+    "Add another description bullet point for this extracurricular (3/3)",
+    "Name another extracurricular you are involved in",
+    "When did you start your involvement (month, year)?",
+    "When did you end your involvement (month, year)?",
+    "Add a description bullet point for this extracurricular (1/3)",
+    "Add another description bullet point for this extracurricular (2/3)",
+    "Add another description bullet point for this extracurricular (3/3)", 
+    'Where was your university located?'
 ]
