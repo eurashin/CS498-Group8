@@ -48,12 +48,20 @@ var cs_resume_questions = [
 
 var med_resume_questions = [
     /*skills*/
-    "What is your summarized career objective?", 
-    "what is your address ?",
-    "What are your skills that you would like to add?",
-    "What is the next skill ?",
-    "what is the next skill ?",
-    "what is the next skill ?"    
+    "What is your professional summary?", 
+    "How many years of experience have you had in the field?",
+    "Name a medical/labaratory skill", 
+    "Name another medical/labaratory skill", 
+    "Name another medical/labaratory skill", 
+    "Name another medical/labaratory skill", 
+    "Name another medical/labaratory skill", 
+    "Name another medical/labaratory skill", 
+    "Name a leadership/soft skill",
+    "Name another leadership/soft skill",
+    "Name another leadership/soft skill",
+    "Name another leadership/soft skill",
+    "Name another leadership/soft skill",
+    "Name another leadership/soft skill",
 ]
 
 var business_resume_questions = [
