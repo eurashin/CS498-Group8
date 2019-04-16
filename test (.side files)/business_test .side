@@ -1,0 +1,176 @@
+{
+  "id": "31e55666-e5e7-479d-9b3a-2441b5025241",
+  "version": "2.0",
+  "name": "business button test ]",
+  "url": "https://128.163.232.240",
+  "tests": [{
+    "id": "88534621-9a2d-4208-92fd-513d9b756a65",
+    "name": "business test ",
+    "commands": [{
+      "id": "0efe4cc5-9a67-40c1-8cb9-0939b48e5830",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82c2751f-8a34-4bf8-afa0-64c56c47faf7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1353x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fef6198-ebca-4ed2-a4e4-dc81ceaa3112",
+      "comment": "",
+      "command": "click",
+      "target": "id=3",
+      "targets": [
+        ["id=3", "id"],
+        ["css=#\\33", "css:finder"],
+        ["xpath=//button[@id='3']", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Business')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeedeb84-7cc0-44ca-8a1c-c3ec64545136",
+      "comment": "",
+      "command": "click",
+      "target": "id=finish_button",
+      "targets": [
+        ["id=finish_button", "id"],
+        ["css=#finish_button", "css:finder"],
+        ["xpath=//button[@id='finish_button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Make my resume!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43752328-c945-4ea7-b68c-09bceed9283f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\31 > b",
+      "targets": [
+        ["css=#\\31 > b", "css:finder"],
+        ["xpath=//p[@id='1']/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Accounting Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6aa0f134-8b1d-45a2-b803-11a50e3ca9c8",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=1",
+      "targets": [
+        ["id=1", "id"],
+        ["css=#\\31", "css:finder"],
+        ["xpath=//p[@id='1']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Accountkjrgfirgfring Student')]", "xpath:innerText"]
+      ],
+      "value": "<b> Accountkjrgfirgfring Student </b>"
+    }, {
+      "id": "af8453ea-456e-4713-a2be-5fb96b51b7bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=23",
+      "targets": [
+        ["id=23", "id"],
+        ["css=#\\32 3", "css:finder"],
+        ["xpath=//li[@id='23']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/div[3]/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Tech savvy.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8e2e07c-157c-45c6-b3c4-fe85c74e6540",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=ul:nth-child(1)",
+      "targets": [
+        ["css=ul:nth-child(1)", "css:finder"],
+        ["xpath=//ul[@id='']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/div[3]/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "\\n                <li id=\"23\" align=\"left\" style=\"font-style: italic; color: grey; border: 1px solid black; min-width: 20px;\"> Tech savvy.frlnflrnf</li>\\n                <li id=\"24\" align=\"left\" style=\"font-style: italic; color: grey; border: 1px solid black; min-width: 20px;\"> Exceptional communication skills. </li>\\n                <li id=\"25\" align=\"left\" style=\"font-style: italic; color: grey; border: 1px solid black; min-width: 20px;\"> Efficient at completing tasks. </li>\\n                <li id=\"26\" align=\"left\" style=\"font-style: italic; color: grey; border: 1px solid black; min-width: 20px;\"> Able to work independently or on a team. </li>\\n                <li id=\"27\" align=\"left\" style=\"font-style: italic; color: grey; border: 1px solid black; min-width: 20px;\"> Excellent computational skills. </li>\\n            "
+    }, {
+      "id": "28a09789-a00a-4b8e-8f63-a24f8d8a36bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=9",
+      "targets": [
+        ["id=9", "id"],
+        ["css=#\\39", "css:finder"],
+        ["xpath=//li[@id='9']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/div[5]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[5]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Assisting tax managers and partners in preparing tax returns.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64da58f4-2032-4d0e-8798-920ca216d618",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=ul:nth-child(9)",
+      "targets": [
+        ["css=ul:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='resume']/div[5]/ul", "xpath:idRelative"],
+        ["xpath=//div[5]/ul", "xpath:position"],
+        ["xpath=//ul[contains(.,'Assisting tax managers and frfjbrklfb3fpartners in preparing tax returns.')]", "xpath:innerText"]
+      ],
+      "value": "\\n                <li id=\"9\" align=\"left\" style=\"font-style: italic; color: grey; border: 1px solid black; min-width: 20px;\"> Assisting tax managers and frfjbrklfb3fpartners in preparing tax returns. </li>\\n            "
+    }, {
+      "id": "8d8fead4-fe9a-455e-bc1a-58d5e8c07c3f",
+      "comment": "",
+      "command": "click",
+      "target": "id=36",
+      "targets": [
+        ["id=36", "id"],
+        ["css=#\\33 6", "css:finder"],
+        ["xpath=//li[@id='36']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/div[9]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[9]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Hosted semesterly events within the College of Business.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa780eb9-09fb-470d-8081-8e652c7982da",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=ul:nth-child(4)",
+      "targets": [
+        ["css=ul:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='resume']/div[9]/ul", "xpath:idRelative"],
+        ["xpath=//div[9]/ul", "xpath:position"]
+      ],
+      "value": "\\n                <li id=\"36\" align=\"left\" style=\"font-style: italic; color: grey; border: 1px solid black; min-width: 20px;\"> Hosted semesterly events wf3233fg23gfithin the College of Business. </li>\\n                <li id=\"37\" align=\"left\" style=\"font-style: italic; color: grey; border: 1px solid black; min-width: 20px;\"> Helped with the development of workshops for accounting students. </li>\\n                <li id=\"38\" align=\"left\" style=\"font-style: italic; color: grey; border: 1px solid black; min-width: 20px;\"> Provided community service to the campus community and beyond. </li>\\n            "
+    }, {
+      "id": "3aa0b444-646a-409d-ad93-ea22830086c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='exportPDF()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Export Resume')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0a964e5e-d3af-4454-9da7-117b41c80460",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["88534621-9a2d-4208-92fd-513d9b756a65"]
+  }],
+  "urls": ["https://128.163.232.240/"],
+  "plugins": []
+}
