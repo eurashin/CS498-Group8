@@ -4,6 +4,13 @@
 
 The project we are working on is a web app. It uses speech-to-text to take user inputs towards tailer-making a Resume.  
 
+##TO ACCESS THE PROJECT:
+ 
+go to 128.163.232.240
+Make sure this is in GOOGLE CHROME. 
+You will be warned that the 'connection is not secure.' Please navigate to advanced settings, and continue to the site. 
+This warning is present because we are using a self-signed certificate for HTTPS. 
+
 ## USER BASE:
 
 Anyone who is looking for employment and plans to build a Resume. Future iterations may include different resumes available for 
