@@ -1,3 +1,0 @@
-Buttons can be tested with JS
-
-Audio to be tested with TSL kind of test cases
