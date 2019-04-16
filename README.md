@@ -22,16 +22,14 @@ different career pathways, such as entry-level applications vs. experienced appl
 ## FEASIBILITY: 
 
 ## Timeline expectations: 
-    __Iteration 1__: We will have completed a basic speech to text bot using Python APIS. This bot will ask the user questions through
-    the device's speaker and receive audio input, which is displayed at the end of the session. 
+   ***Iteration 1***: We will have completed a basic speech to text bot using Python APIS. This bot will ask the user questions through the device's speaker and receive audio input, which is displayed at the end of the session. 
     
-    __Iteration 2__: We will complete a basic web interface that works across all browser types. This will be tested and verified using Selenium. 
-    The web app will allow the user to choose a resume template but will not yet incorporate the speech-to-text bot. 
+   ***Iteration 2***: We will complete a basic web interface that works across all browser types. This will be tested and verified using Selenium. The web app will allow the user to choose a resume template but will not yet incorporate the speech-to-text bot. 
 
-    __Iteration 3__: We will integrate the python bot and the web interface. This will be the "bare bones" product and will allow the user to
+   ***Iteration 3***: We will integrate the python bot and the web interface. This will be the "bare bones" product and will allow the user to
     run a resume session, review, and download a resume through the website. 
 
-    __Final presentation__: We will refine any existing problems and add additional functionailities (different resume template options, career pathways, etc)
+   ***Iteration 1***: We will refine any existing problems and add additional functionailities (different resume template options, career pathways, etc)
 
 ## Team skills: 
     - Tej:  Python speech-to-text API
