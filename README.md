@@ -1,16 +1,16 @@
-#CS 498 - Group 8 
+# CS 498 - Group 8 
 
-##PROJECT OVERVIEW : 
+## PROJECT OVERVIEW : 
 
 The project we are working on is a web app. It uses speech-to-text to take user inputs towards tailer-making a Resume.  
 
-##USER BASE:
+## USER BASE:
 
 Anyone who is looking for employment and plans to build a Resume. Future iterations may include different resumes available for 
 different career pathways, such as entry-level applications vs. experienced applications. 
 
 
-##TECHNOLOGIES REQUIRED:
+## TECHNOLOGIES REQUIRED:
 
 - Python API - Speech-to-text
 - HTML / CSS/ JavaScript (front end)
@@ -19,9 +19,9 @@ different career pathways, such as entry-level applications vs. experienced appl
 - GitHub (version control)
 - Microphones and Speakers (Hardware)
 
-##FEASIBILITY: 
+## FEASIBILITY: 
 
-##Timeline expectations: 
+## Timeline expectations: 
     __Iteration 1__: We will have completed a basic speech to text bot using Python APIS. This bot will ask the user questions through
     the device's speaker and receive audio input, which is displayed at the end of the session. 
     
@@ -33,13 +33,13 @@ different career pathways, such as entry-level applications vs. experienced appl
 
     __Final presentation__: We will refine any existing problems and add additional functionailities (different resume template options, career pathways, etc)
 
-##Team skills: 
+## Team skills: 
     - Tej:  Python speech-to-text API
     - Evan: front-end web development 
     - Kyle: front-end web development and testing 
     - Eura: back-end web development, integration
 
-##Forseeable risks: 
+## Forseeable risks: 
     - Internet traffic, especially with an audio heavy application
     - Speech to text may not always be robust to different accents/sound quality
     - Integrating python application with web technologies will be difficult 
