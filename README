@@ -32,7 +32,7 @@ Timeline expectations:
     Iteration 3: We will integrate the python bot and the web interface. This will be the "bare bones" product and will allow the user to
     run a resume session, review, and download a resume through the website. 
 
-    Final presentatino: We will refine any existing problems and add additional functionailities (different resume template options, career pathways, etc)
+    Final presentation: We will refine any existing problems and add additional functionailities (different resume template options, career pathways, etc)
 
 Team skills: 
     - Tej:  Python speech-to-text API
