@@ -4,7 +4,7 @@
 
 The project we are working on is a web app. It uses speech-to-text to take user inputs towards tailer-making a Resume.  
 
-##TO ACCESS THE PROJECT:
+## TO ACCESS THE PROJECT:
  
 go to 128.163.232.240
 Make sure this is in GOOGLE CHROME. 
