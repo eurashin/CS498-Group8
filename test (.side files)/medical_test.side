@@ -1,0 +1,176 @@
+{
+  "id": "03839594-5e5a-4419-9533-f59ce8381b32",
+  "version": "2.0",
+  "name": "medical button test",
+  "url": "https://128.163.232.240",
+  "tests": [{
+    "id": "55487900-6c57-4a77-bf5f-6506127c560c",
+    "name": "medical_test",
+    "commands": [{
+      "id": "220400ea-61da-40b5-bc92-ec064cb4cc7c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "482ee298-b288-4ff4-977b-d385293d0f5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1353x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6947d9e3-de06-4a18-b971-ffdd14c02090",
+      "comment": "",
+      "command": "click",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//button[@id='2']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Medical')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3305b8e1-3696-475a-b2cd-bd4e4a5adc28",
+      "comment": "",
+      "command": "click",
+      "target": "id=finish_button",
+      "targets": [
+        ["id=finish_button", "id"],
+        ["css=#finish_button", "css:finder"],
+        ["xpath=//button[@id='finish_button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Make my resume!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7853b621-8143-4f01-9004-c677babb2cd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=0",
+      "targets": [
+        ["id=0", "id"],
+        ["css=#\\30", "css:finder"],
+        ["xpath=//h1[@id='0']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Name')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9919cc16-ed7b-488e-9d20-b274c0d0020c",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=0",
+      "targets": [
+        ["id=0", "id"],
+        ["css=#\\30", "css:finder"],
+        ["xpath=//h1[@id='0']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'lheohetg')]", "xpath:innerText"]
+      ],
+      "value": "lheohetg"
+    }, {
+      "id": "269ca1dd-0197-4deb-ae0c-1c51e1f2e88b",
+      "comment": "",
+      "command": "click",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//p[@id='2']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Phone Number')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "009d8a90-af46-405d-a217-dbd3fdae571b",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//p[@id='2']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'90909099')]", "xpath:innerText"]
+      ],
+      "value": "90909099"
+    }, {
+      "id": "fc225bf6-d939-490d-ba7f-27acd61d7f51",
+      "comment": "",
+      "command": "click",
+      "target": "id=4",
+      "targets": [
+        ["id=4", "id"],
+        ["css=#\\34", "css:finder"],
+        ["xpath=//p[@id='4']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/div[3]/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Job Title')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "edc509c4-a8d2-45fb-84c0-d4e6b928c7ff",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=4",
+      "targets": [
+        ["id=4", "id"],
+        ["css=#\\34", "css:finder"],
+        ["xpath=//p[@id='4']", "xpath:attributes"],
+        ["xpath=//div[@id='resume']/div[3]/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'khjfgif igfigi')]", "xpath:innerText"]
+      ],
+      "value": "khjfgif igfigi"
+    }, {
+      "id": "033c26fc-3e06-430e-9340-79a91536027a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='exportPDF()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Export Resume')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee31cc6e-6bce-4cce-a705-c682f34cecc2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,433)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c99cf11-5153-49cd-a350-9cb3f2424d65",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='exportPDF()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Export Resume')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f044d28c-80c0-4296-934c-03d4aefb27e5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["55487900-6c57-4a77-bf5f-6506127c560c"]
+  }],
+  "urls": ["https://128.163.232.240/"],
+  "plugins": []
+}
