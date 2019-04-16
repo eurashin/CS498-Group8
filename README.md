@@ -29,7 +29,7 @@ different career pathways, such as entry-level applications vs. experienced appl
    ***Iteration 3***: We will integrate the python bot and the web interface. This will be the "bare bones" product and will allow the user to
     run a resume session, review, and download a resume through the website. 
 
-   ***Iteration 1***: We will refine any existing problems and add additional functionailities (different resume template options, career pathways, etc)
+   ***Final Presentation***: We will refine any existing problems and add additional functionailities (different resume template options, career pathways, etc)
 
 ## Team skills: 
     - Tej:  Python speech-to-text API
