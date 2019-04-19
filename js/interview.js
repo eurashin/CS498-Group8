@@ -13,6 +13,7 @@ function start_interview(type) {
     window.localStorage.setItem("type", JSON.stringify(type));
 }
 
+//actions for starting the speech recognition
 function startSpeech() {
     try { // calling it twice will throw...
       answer = "";
@@ -21,6 +22,7 @@ function startSpeech() {
   catch(e){}
 }
 
+//takes the audio input and parses it to a string. 
 function initialize_recognition() {
     recognition = new webkitSpeechRecognition();
     recognition.onresult = function(event) {
@@ -48,6 +50,7 @@ function initialize_recognition() {
 }
 
 
+//chooses what kind of interview to conduct (CS, medical, business)
 function choose_question_array(type) {
     var array = base_question_array;
    
@@ -95,7 +98,7 @@ function conduct_interview(interview_type) {
     iterator(question_array.length, question_array, current_question_array, current_answer_array, question_array.length);
 }
 
-
+//recursive definition of the question asking process
 var iterator = function(iteration, question_array, current_question_array, current_answer_array, total_length) {
     if(iteration > 0) {
         var i = total_length - iteration;
@@ -118,6 +121,7 @@ var iterator = function(iteration, question_array, current_question_array, curre
     }
 }
 
+//completes the interview, goes to the form page
 var fill_form = function() {
     set_answers();
     if(type == 'cs') {
@@ -131,6 +135,8 @@ var fill_form = function() {
     }
 }
 
+//sets the answers from the interview to a globally accessible array 
+//(so that we can still see the value when we switch pages)
 var set_answers = function() {
     window.localStorage.setItem("answer_array", JSON.stringify(answer_array));
 }
@@ -163,7 +169,7 @@ function add_element(current_question_array, question, question_index) {
     return(current_question_array);
 }
 
-
+//updates the GUI to display the user's answer to a question
 function add_answerElement(current_answer_array, answer, answer_index) {
     answer_array[answer_index] = answer;
     var start_index = 0;
@@ -199,6 +205,7 @@ function update_bubble_view(current_question_array, question_index) {
     }
 }
 
+//updates the GUI to display a question
 function update_bubble_question(current_answer_array, answer_index){
     for(var i=0; i<max_num; i++) {
         var answer = current_answer_array[i];
