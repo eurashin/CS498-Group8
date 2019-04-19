@@ -1,9 +1,13 @@
+/* css stylesheet for Business.HTML */
+
+/* Define font and text alignment for the body */
 body
 {
     font-family: Helvetica, black, sans-serif;
     text-align:center;
 }
 
+/* p elements are defined to be on one line */
 p
 {
     display: inline-block;

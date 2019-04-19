@@ -1,20 +1,27 @@
+/* css stylesheet for med.html */
+
+/* define color for headings */
 h3, h1, h2{
     color:#6897e2;
 }
 
+/* define color and style of horizontal rule */
 hr {
     color:#6897e2;
     border-style:dotted;
 }
 
+/* define font for body */
 body {
     font-family: Impact, Charcoal, sans-serif;
-}   
+}
 
+/* set font size for paragraphs */
 p {
     font-size:14px;
 }
 
+/* define line height for header 2 */
 h2 {
     line-height:5px;
 }

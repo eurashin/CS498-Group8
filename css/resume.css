@@ -1,12 +1,17 @@
+/* css stylesheet for form.html (Computer Science Resume) */
+
+/* define font type and text alignment for the body */
 body {
     font-family: Impact, Charcoal, sans-serif;
     text-align:center;
-}   
+}
 
+/* define font size for paragraphs */
 p {
     font-size:14px;
 }
 
+/* define line height for header 2 */
 h2 {
     line-height:5px;
 }
