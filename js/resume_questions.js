@@ -1,3 +1,4 @@
+//the questions that are unanimous to all types of interviews
 var base_question_array = [
     /*header questions*/
     "What is your name?", 
@@ -25,6 +26,7 @@ var base_question_array = [
     "What was the date you obtained your degree (month, year)?", 
     "What was your GPA (4.0 scale)?"
 ]
+
 
 var cs_resume_questions = [
     /*skills*/

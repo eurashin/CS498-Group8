@@ -1,5 +1,6 @@
 var answer_array;
 
+//takes the answers from the interview and enters them into the form element
 function setAnswers() {
     answer_array =  JSON.parse(window.localStorage.getItem("answer_array"));
     console.log(answer_array);
@@ -15,6 +16,8 @@ function setAnswers() {
         }
     }
 
+    //when a form element is clicked, makes the following text black instead of a 
+    // 'prompt' grey color
     $('.form-element').click(function() {
         $(this).css('color', 'black');
         $(this).css('font-style', 'normal');
