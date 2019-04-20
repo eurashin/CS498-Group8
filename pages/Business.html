@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <!-- Reference to css stylesheet -->
+    <link rel="stylesheet" href="../css/business.css">
 
-    <link rel="stylesheet" href="../css/buisness.css">
-
-    <!-- js -->
+    <!-- reference to other scripts used -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <script src="../dist/jspdf.debug.js"></script>
@@ -14,14 +14,18 @@
     <script src="../js/form.js"></script>
 </head>
 
+<!-- takes the answers from the interview and enters them into the form element -->
 <body onload="setAnswers()">
+    <!-- set border of resume -->
     <div id="resume" style="width:8.5in; height:11in; border-style:solid; margin:auto;">
 
+        <!-- user's name at the top of the resume -->
         <h1 id="0" style="width:90%; margin:auto; margin-top:10px; margin-bottom:0px;" contenteditable='true'> Name </h1>
-
+        <!-- Two horizontal rule elements underneath the user's name -->
         <hr style="width:90%; border-width:1px; border-style:solid; margin-top:0px; margin-bottom:0.5px;">
         <hr style="width:90%; border-width:1px; border-style:solid; margin-top:0px; margin-bottom:0.5px;">
 
+        <!-- contact information of user displayed here -->
         <p id="1" style="margin-top:10px; margin-bottom:0px; font-size:18px;" contenteditable='true'><b> Accounting Student </b></p>
         <br>
         <p style="margin-top:0px; margin-bottom:0px;"> Phone: </p>
@@ -34,6 +38,7 @@
         <p id="21" style="margin-top:0px; margin-bottom:5px;" contenteditable="true"> linkedin.com/in/name </p>
 
         <!-- https://stackoverflow.com/questions/2812770/add-centered-text-to-the-middle-of-a-hr-like-line -->
+        <!-- divider for the summary section of resume -->
         <div style="margin:auto; width:90%; height:10px; border-bottom:3px solid black; text-align:center">
             <span style="font-size:20px; background-color:white; padding:0 10px;"><b>
                 SUMMARY
@@ -41,19 +46,21 @@
         </div>
 
         <br>
+        <!-- user's summary goes here -->
         <p id="22" contenteditable='true' align="left" style="height:0.75in; width:90%; margin:auto; margin-bottom:5px;">
             A third year Accounting and Finance undergraduate student at the University of Kentucky with an interest in
             corporate finances and auditing. Currently seeking a summer internship to apply my experience with assisting
             a company's accounting and auditing needs.
         </p>
         <br>
-
+        <!-- divider for Skills section of resume -->
         <div style="margin:auto; width:90%; height:10px; border-bottom:3px solid black; text-align:center">
             <span style="font-size:20px; background-color:white; padding:0 10px;"><b>
                 SKILLS
             </b></span>
         </div>
 
+        <!-- user's skills are displayed here in bulleted format -->
         <br>
         <div style="height:1in; width:90%; margin:auto; margin-bottom:0px;">
             <ul id="" contenteditable='true' style="height:1in; width:41%; padding-left:20px; margin-top:0px; margin-bottom:5px; display:inline-block; float:left;">
@@ -72,14 +79,17 @@
             </ul>
         </div>
 
+        <!-- divider for the experience section of resume -->
         <div style="margin:auto; width:90%; height:10px; margin-top:5px; border-bottom:3px solid black; text-align:center">
             <span style="font-size:20px; background-color:white; padding:0 10px;"><b>
                 EXPERIENCE
             </b></span>
         </div>
 
+        <!-- user's experiences are stored here -->
         <div style="height:2.5in; width:90%; margin:auto; margin-top:20px; margin-bottom:0px;">
 
+            <!-- experience 1 description -->
             <p id="4" style="margin-top:0px; margin-bottom:0px; float:left;" contenteditable="true"><b> Accounting Intern </b></p>
             <p style="margin-top:0px; margin-bottom:0px; float:left;"> ,&nbsp </p>
             <p id="7" style="margin-top:0px; margin-bottom:0px; float:left;" contenteditable="true"> Dean Dorton Allen Ford, PLLC </p>
@@ -88,10 +98,11 @@
             <p style="margin-top:0px; margin-bottom:0px; float:left;">.</p>
             <p id="5" style="margin-top:0px; margin-bottom:0px; float:right;" contenteditable="true"> 01/2019 - 04/2019 </p>
             <br>
+            <!-- list responsibilities for experience 1 -->
             <ul contenteditable='true' style="height:1in; width:97%; padding-left:20px; margin-top:5px; margin-bottom:5px;">
                 <li id='9' align="left"> Assisting tax managers and partners in preparing tax returns. </li>
             </ul>
-
+            <!-- experience 2 description -->
             <p id="10" style="margin-top:0px; margin-bottom:0px; float:left;" contenteditable="true"><b> Accounting Peer Tutor </b></p>
             <p style="margin-top:0px; margin-bottom:0px; float:left;"> ,&nbsp </p>
             <p id="13" style="margin-top:0px; margin-bottom:0px; float:left;" contenteditable="true"> The Study </p>
@@ -100,19 +111,21 @@
             <p style="margin-top:0px; margin-bottom:0px; float:left;">.</p>
             <p id="11" style="margin-top:0px; margin-bottom:0px; float:right;" contenteditable="true"> 08/2018 - 12/2018 </p>
             <br>
+            <!-- list responsibilities for experience 2 -->
             <ul  contenteditable='true' style="height:1in; width:97%; padding-left:20px; margin-top:5px; margin-bottom:5px;">
                 <li id='15' align="left"> Effectively planned the direction and content of tutoring sessions. </li>
             </ul>
 
         </div>
 
-
+        <!-- divider for the education section of resume -->
         <div style="margin:auto; width:90%; height:10px; margin-top:10px; border-bottom:3px solid black; text-align:center">
             <span style="font-size:20px; background-color:white; padding:0 10px;"><b>
                 EDUCATION
             </b></span>
         </div>
 
+        <!-- user's education is displayed here -->
         <div style="height:0.75in; width:90%; margin:auto; margin-top:30px; margin-bottom:0px;">
             <p id="16" style="margin-top:0px; margin-bottom:0px; float:left;" contenteditable="true"><b> University of Kentucky </b></p>
             <p style="margin-top:0px; margin-bottom:0px; float:left;"> ,&nbsp </p>
@@ -129,26 +142,32 @@
             <br>
         </div>
 
+        <!-- divider for the extracurricular section of resume -->
         <div style="margin:auto; width:90%; height:10px; margin-top:7px; border-bottom:3px solid black; text-align:center">
             <span style="font-size:20px; background-color:white; padding:0 10px;"><b>
                 EXTRACURRICULARS
             </b></span>
         </div>
 
+        <!-- user's extracurricular activities are displayed here -->
         <div style="height:2.5in; width:90%; margin:auto; margin-top:20px; margin-bottom:0px;">
 
+            <!-- extracurricular 1 description -->
             <p id="33" style="margin-top:0px; margin-bottom:0px; float:left;" contenteditable="true"><b> Beta Alpha Psi </b></p>
             <p id="34" style="margin-top:0px; margin-bottom:0px; float:right;" contenteditable="true"> 08/2016 - Present </p>
             <br>
+            <!-- list of responsibilities for extracurricular 1 -->
             <ul contenteditable='true' style="height:0.75in; width:97%; padding-left:20px; margin-top:5px; margin-bottom:5px;">
                 <li id='36' align="left"> Hosted semesterly events within the College of Business. </li>
                 <li id='37' align="left"> Helped with the development of workshops for accounting students. </li>
                 <li id='38' align="left"> Provided community service to the campus community and beyond. </li>
             </ul>
 
+            <!-- extracurricular 2 description -->
             <p id="39" style="margin-top:0px; margin-bottom:0px; float:left;" contenteditable="true"><b> University DOTA Club </b></p>
             <p id="40" style="margin-top:0px; margin-bottom:0px; float:right;" contenteditable="true"> 08/2016 - Present </p>
             <br>
+            <!-- list of responsibilities for extracurricular 2 -->
             <ul  contenteditable='true' style="height:0.75in; width:97%; padding-left:20px; margin-top:5px; margin-bottom:5px;">
                 <li id='42' align="left"> Host intercollegiate tournaments on campus. </li>
                 <li id='43' align="left"> Helped with fundraising efforts. </li>
@@ -158,6 +177,7 @@
         </div>
     </div>
 
+    <!-- button to convert HTML resume to PDF on click -->
     <button style="margin:auto; width:8.5in; margin-top:20px; margin-bottom:20px;" onclick="exportPDF()">Export Resume</button>
 
 </body>

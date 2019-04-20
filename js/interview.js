@@ -4,11 +4,11 @@ var recognition;
 var id;
 var answer = "";
 var answer_array;
-var type; 
+var type;
 
 // loads a new webpage
-// input: the directory of the webpage to be loaded 
-function start_interview(type) {  
+// input: the directory of the webpage to be loaded
+function start_interview(type) {
     window.location.href = './pages/interview.html';
     window.localStorage.setItem("type", JSON.stringify(type));
 }
@@ -22,7 +22,7 @@ function startSpeech() {
   catch(e){}
 }
 
-//takes the audio input and parses it to a string. 
+//takes the audio input and parses it to a string.
 function initialize_recognition() {
     recognition = new webkitSpeechRecognition();
     recognition.onresult = function(event) {
@@ -53,15 +53,15 @@ function initialize_recognition() {
 //chooses what kind of interview to conduct (CS, medical, business)
 function choose_question_array(type) {
     var array = base_question_array;
-   
+
     if(type == 'cs') {
-        array = array.concat(cs_resume_questions); 
+        array = array.concat(cs_resume_questions);
     }
     else if(type == 'medical') {
-        array = array.concat(med_resume_questions); 
+        array = array.concat(med_resume_questions);
     }
     else {
-        array = array.concat(business_resume_questions); 
+        array = array.concat(business_resume_questions);
     }
 
     return(array);
@@ -131,11 +131,11 @@ var fill_form = function() {
         window.location.href='./med.html';
     }
     else {
-        window.location.href='./Business.html';
+        window.location.href='./business.html';
     }
 }
 
-//sets the answers from the interview to a globally accessible array 
+//sets the answers from the interview to a globally accessible array
 //(so that we can still see the value when we switch pages)
 var set_answers = function() {
     window.localStorage.setItem("answer_array", JSON.stringify(answer_array));

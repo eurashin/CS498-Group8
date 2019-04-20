@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <!-- Reference to css stylesheet -->
+    <link rel="stylesheet" href="../css/resume.css">
 
-    <link rel="stylesheet" href="../resume.css">
-
-    <!-- js -->
+    <!-- reference to other scripts used -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <script src="../dist/jspdf.debug.js"></script>
@@ -14,11 +14,15 @@
     <script src="../js/form.js"></script>
 </head>
 
-
+<!-- takes the answers from the interview and enters them into the form element -->
 <body onload="setAnswers()">
+    <!-- set border of resume -->
     <div id="resume" style="width:8.5in; height:11in; border-style:solid; margin:auto;">
+        <!-- user's name at the top of the resume -->
         <h1 id="0" style="width:100%;" contenteditable='true' class='form-element'> Name </h1>
         <h3 id="1" style="width:100%;" contenteditable='true' class='form-element'>Occupation/Title</h3>
+
+        <!-- contact information of user displayed here -->
         <div style="width:60%; margin:auto; height:0.6in;">
             <div style="float:left; width:33%;">
                 <p style="font-weight:bold;">Phone </p>
@@ -34,11 +38,14 @@
                 <p style="font-weight:bold;">Email </p>
                 <p id="3" contenteditable='true' class='form-element'>email</p>
             </div>
-
-
         </div>
+
         <br>
+
+        <!-- user's summary goes here -->
         <p id="21" contenteditable='true' style="height:0.7in; width:90%; margin:auto; " class='form-element'>Summary of your career objectives</p>
+
+        <!-- user's work experiences are displayed here -->
         <h2>Work Experience</h2>
         <div style="width:90%; display:inline-block; line-height:1;">
             <div style="width:30%; float:left; height:100%; margin:0px;">
@@ -74,8 +81,10 @@
             </div>
         </div>
 
+        <!-- user's skills are listed here -->
         <h2>Skills</h2>
         <div style="width:90%; display:inline-block; line-height:1; margin:0px;">
+            <!-- list programming languages that user is familiar with -->
             <div style="width:30%; float:left; height:100%; margin:0px;">
                 <p style="font-weight:bold;"> Programming Languages </p>
             </div>
@@ -87,7 +96,7 @@
                 <p style="float:left; margin-right:1em;" id='27' contenteditable='true' class='form-element'>Language</p>
                 <p style="float:left; margin-right:1em;" id='28' contenteditable='true' class='form-element'>Language</p>
             </div>
-
+            <!-- list any tools/frameworks that user is familiar with -->
             <div style="width:30%; float:left; height:100%; margin:0px;">
                 <p style="font-weight:bold;"> Tools/Framework</p>
             </div>
@@ -99,7 +108,7 @@
             </div>
         </div>
 
-
+        <!-- user's projects are listed here -->
         <h2>Projects</h2>
         <div style="width:90%; display:inline-block; line-height:1; margin:0px;">
             <div style="width:30%; float:left; height:100%; margin:0px;">
@@ -118,6 +127,7 @@
             </div>
         </div>
 
+        <!-- user's education is displayed here -->
         <h2>Education</h2>
         <div style="width:90%; display:inline-block; line-height:1; margin:auto;">
             <p style="font-weight:bold;" id='16' contenteditable='true' class='form-element'> University Name</p>
@@ -128,6 +138,8 @@
         </div>
 
     </div>
+
+    <!-- button to convert HTML resume to PDF on click -->
     <button style="margin:auto; width:8.5in; margin-top:20px; margin-bottom:20px;" onclick="exportPDF()">Export Resume</button>
 
 </body>

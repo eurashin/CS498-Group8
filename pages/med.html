@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <!-- Reference to css stylesheet -->
+    <link rel="stylesheet" href="../css/med_resume.css">
 
-    <link rel="stylesheet" href="../med_resume.css">
-
-    <!-- js -->
+    <!-- reference to other scripts used -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
     <script src="../dist/jspdf.debug.js"></script>
@@ -14,14 +14,17 @@
     <script src="../js/form.js"></script>
 </head>
 
-
+<!-- takes the answers from the interview and enters them into the form element -->
 <body onload="setAnswers()">
+    <!-- set border of resume -->
     <div id="resume" style="width:8.5in; height:11in; border-style:solid; margin:auto; padding-left:10px; padding-right:10px;">
         <!-- header-->
         <img src='../images/med_symbol.png' style='width:1.5in; margin-left:3.5in;'/>
         <h1 id="0" style="width:100%; text-align:center;" contenteditable='true' class='form-element'> Name </h1>
         <h3 id="1" style="width:100%; text-align:center;" contenteditable='true' class='form-element'>Occupation/Title</h3>
         <h3 id="22" style="width:100%; text-align:center;" contenteditable='true' class='form-element'>Years of Experience</h3>
+
+        <!-- contact information of user displayed here -->
         <div style="width:60%; margin:auto; height:0.5in;">
             <div style="float:left; width:49%; text-align:center;">
                 <p style="font-weight:bold;">Phone </p>
@@ -34,14 +37,17 @@
             </div>
         </div>
         <br>
+        <!-- user's summary goes here -->
         <h3 id="1" style="width:100%;" contenteditable='true' class='form-element'>Professional Summary</h3>
         <p id="21" contenteditable='true' style="height:0.5in; width:90%; margin:auto; " class='form-element'>Summary of your career objectives</p>
 
         <br>
 
+        <!-- user's skills are listed here -->
         <h2>Skills</h2>
         <hr>
         <div style="width:90%; display:inline-block; line-height:1; margin:0px;">
+            <!-- list any Medical or lab skills that the user possesses -->
             <div style="width:30%; float:left; height:100%; margin:0px;">
                 <p style="font-weight:bold;"> Medical/Laboratory</p>
             </div>
@@ -53,6 +59,7 @@
                 <p style="float:left; margin-right:1em;" id='27' contenteditable='true' class='form-element'>Skill</p>
                 <p style="float:left; margin-right:1em;" id='28' contenteditable='true' class='form-element'>Skill</p>
             </div>
+            <!-- list any leadership skills that the user possesses -->
             <div style="width:30%; float:left; height:100%; margin:0px;">
                 <p style="font-weight:bold;"> Leadership</p>
             </div>
@@ -66,6 +73,7 @@
             </div>
         </div>
 
+        <!-- user's work experiences are displayed here -->
         <h2>Work Experience</h2>
         <hr>
         <div style="width:90%; display:inline-block; line-height:1;">
@@ -102,6 +110,7 @@
             </div>
         </div>
 
+        <!-- user's education is displayed here -->
         <h2>Education</h2>
         <hr>
         <div style="width:90%; display:inline-block; line-height:1; margin:auto;">
@@ -113,8 +122,8 @@
         </div>
 
     </div>
-    <center>
-    <button style="margin:auto; width:8.5in; margin-top:20px; margin-bottom:20px;" onclick="exportPDF()">Export Resume</button>
-    </center>
+
+    <!-- button to convert HTML resume to PDF on click -->
+    <center><button style="margin:auto; width:8.5in; margin-top:20px; margin-bottom:20px;" onclick="exportPDF()">Export Resume</button></center>
 
 </body>

@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
+    <!-- Reference to css stylesheet -->
     <link rel="stylesheet" href="../stylesheet.css">
 
-    <!-- js -->
+    <!-- reference to other scripts used -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/interview.js"></script>
     <script src="../js/resume_questions.js"></script>
 </head>
 
-
+<!-- start interview on load -->
 <body onload="conduct_interview()">
     <h1 style="text-align:center;"> Please answer the following questions about yourself: </h1>
 
     <br>
 
+    <!-- displays speech bubbles to house questions; hidden initially -->
     <div class="center" style="width:1000px; height:500px;">
         <div id="question_panel" style="left:0px; width:45%; border:solid black; height:100%; float:left;">
             <br>
@@ -43,6 +44,7 @@
             </div>
         </div>
 
+        <!-- displays speech bubbles to house answers; hidden initially -->
         <div id="answer_panel" style="right:0px; width:45%; border:solid black; height:100%; float:right; ">
             <br>
             <br>
@@ -72,6 +74,7 @@
             </div>
         </div>
 
+        <!-- fills appropriate HTML form with answer array and directs user to resulting resume --> 
         <button id="finish_button" onclick="fill_form()" style="width:100%; height:50px; margin-top:50px;"> Make my resume! </button>
     </div>
 
